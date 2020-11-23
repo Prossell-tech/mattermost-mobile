@@ -39,4 +39,3 @@ index 73fcd14..8c9e447 100644
  
    private void emitLocalizationDidChange() {
      if (getReactApplicationContext().hasActiveCatalystInstance()) {
-

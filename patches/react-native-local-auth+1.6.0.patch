@@ -89,7 +89,7 @@ index 49242b4..8deada5 100644
 +};
 \ No newline at end of file
 diff --git a/node_modules/react-native-local-auth/android/src/main/java/io/tradle/reactlocalauth/LocalAuthModule.java b/node_modules/react-native-local-auth/android/src/main/java/io/tradle/reactlocalauth/LocalAuthModule.java
-index 38b78f1..a47afea 100644
+index 38b78f1..896e7dc 100644
 --- a/node_modules/react-native-local-auth/android/src/main/java/io/tradle/reactlocalauth/LocalAuthModule.java
 +++ b/node_modules/react-native-local-auth/android/src/main/java/io/tradle/reactlocalauth/LocalAuthModule.java
 @@ -6,6 +6,7 @@ import android.app.KeyguardManager;
@@ -172,7 +172,7 @@ index 38b78f1..a47afea 100644
        authPromise = null;
 diff --git a/node_modules/react-native-local-auth/react-native-local-auth.podspec b/node_modules/react-native-local-auth/react-native-local-auth.podspec
 new file mode 100644
-index 0000000..5f9a6b4
+index 0000000..40b4466
 --- /dev/null
 +++ b/node_modules/react-native-local-auth/react-native-local-auth.podspec
 @@ -0,0 +1,20 @@
@@ -196,4 +196,3 @@ index 0000000..5f9a6b4
 +
 +  s.dependency 'React'
 +end
-

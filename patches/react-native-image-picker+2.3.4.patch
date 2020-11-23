@@ -365,7 +365,7 @@ index 48fb5c1..3872d91 100644
 +  }
  }
 diff --git a/node_modules/react-native-image-picker/android/src/main/java/com/imagepicker/utils/RealPathUtil.java b/node_modules/react-native-image-picker/android/src/main/java/com/imagepicker/utils/RealPathUtil.java
-index cc90dce..c1cc74d 100644
+index cc90dce..3b76bb9 100644
 --- a/node_modules/react-native-image-picker/android/src/main/java/com/imagepicker/utils/RealPathUtil.java
 +++ b/node_modules/react-native-image-picker/android/src/main/java/com/imagepicker/utils/RealPathUtil.java
 @@ -7,16 +7,22 @@ import android.net.Uri;
@@ -474,4 +474,3 @@ index cc90dce..c1cc74d 100644
  	/**
  	 * Get the value of the data column for this Uri. This is useful for
  	 * MediaStore Uris, and other file-based ContentProviders.
-

@@ -48,7 +48,7 @@ diff --git a/node_modules/react-native-navigation/lib/ios/RNNViewLocation.m b/no
 index f5187d9..d97e766 100644
 --- a/node_modules/react-native-navigation/lib/ios/RNNViewLocation.m
 +++ b/node_modules/react-native-navigation/lib/ios/RNNViewLocation.m
-@@ -32,11 +32,7 @@ - (CGFloat)getClippedCornerRadius:(UIView *)view {
+@@ -32,11 +32,7 @@
  
  - (CATransform3D)getTransform:(UIView *)view {
      if (view) {
@@ -61,4 +61,3 @@ index f5187d9..d97e766 100644
      }
  
      return CATransform3DIdentity;
-

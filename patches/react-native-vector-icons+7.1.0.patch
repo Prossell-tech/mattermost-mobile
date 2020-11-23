@@ -23,4 +23,3 @@ index 9e666b4..5d5830b 100755
      if(cacheFile.exists()) {
        return cacheFileUrl;
      }
-
