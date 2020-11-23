@@ -78,4 +78,3 @@ import Foundation
         try? fileMgr.removeItem(atPath: tempURL.path)
     }
 }
-

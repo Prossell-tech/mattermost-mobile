@@ -10,4 +10,3 @@
 -(void)setPreference:(NSString *)key value:(NSString *) value;
 -(void)writeToFile:(NSString *)fileName content:(NSString *)content;
 @end
-

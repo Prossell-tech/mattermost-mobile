@@ -549,4 +549,3 @@ extension ShareViewController: ChannelsViewControllerDelegate {
     popConfigurationViewController()
   }
 }
-

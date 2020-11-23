@@ -163,4 +163,3 @@ RNHWKeyboardEvent *hwKeyEvent = nil;
   [hwKeyEvent sendHWKeyEvent:@"shift-enter"];
 }
 @end
-

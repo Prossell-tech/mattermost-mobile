@@ -10,4 +10,3 @@ if [[ "${SENTRY_ENABLED}" = "true" ]]; then
 else
 	echo "Not uploading debugging symbols to Sentry because Sentry is disabled"
 fi
-

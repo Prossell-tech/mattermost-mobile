@@ -5,4 +5,3 @@
 @interface MattermostBucketModule : NSObject<RCTBridgeModule>
 @property MattermostBucket *bucket;
 @end
-

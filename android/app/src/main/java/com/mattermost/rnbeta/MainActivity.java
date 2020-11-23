@@ -48,4 +48,3 @@ public class MainActivity extends NavigationActivity {
         HWKeyboardConnected = getResources().getConfiguration().keyboard == Configuration.KEYBOARD_QWERTY;
     }
 }
-

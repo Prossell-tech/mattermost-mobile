@@ -40,4 +40,3 @@ public class MattermostCredentialsHelper {
         keychainModule.getGenericPasswordForOptions(serverUrl, promise);
     }
 }
-

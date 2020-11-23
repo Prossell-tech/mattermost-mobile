@@ -13,4 +13,3 @@ else
 	echo "Sentry native integration is not enabled"
 	./react-native-xcode.sh
 fi
-

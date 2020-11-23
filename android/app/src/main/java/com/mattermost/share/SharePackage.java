@@ -32,4 +32,3 @@ public class SharePackage implements ReactPackage {
         return Collections.emptyList();
     }
 }
-
