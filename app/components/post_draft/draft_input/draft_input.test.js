@@ -200,4 +200,3 @@ describe('DraftInput', () => {
         expect(Alert.alert).not.toHaveBeenCalled();
     });
 });
-

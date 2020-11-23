@@ -245,4 +245,3 @@ class WebSocketClient {
 }
 
 export default new WebSocketClient();
-

@@ -135,4 +135,3 @@ const style = StyleSheet.create({
         }),
     },
 });
-

@@ -85,4 +85,3 @@ exports[`ChannelInfo -> Favorite should match snapshot for Unfavorite Channel 1`
   togglable={true}
 />
 `;
-

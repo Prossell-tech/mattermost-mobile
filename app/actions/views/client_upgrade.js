@@ -8,4 +8,3 @@ export function setLastUpgradeCheck() {
         type: ViewTypes.SET_LAST_UPGRADE_CHECK,
     };
 }
-

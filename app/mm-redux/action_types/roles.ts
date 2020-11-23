@@ -25,4 +25,3 @@ export default keyMirror({
 
     SET_PENDING_ROLES: null,
 });
-

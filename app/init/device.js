@@ -11,4 +11,3 @@ if (DeviceTypes.IS_TABLET) {
         }
     });
 }
-

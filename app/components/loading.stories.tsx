@@ -15,4 +15,3 @@ storiesOf('Loading Icon Story', module).
             color={select('color', {Red: 'red', Blue: 'blue', Yellow: 'yellow', Black: 'black'}, 'red')}
         />
     ));
-

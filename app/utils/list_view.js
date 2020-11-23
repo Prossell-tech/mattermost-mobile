@@ -20,4 +20,3 @@ export function makeExtraData() {
         return lastArgs;
     };
 }
-

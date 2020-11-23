@@ -92,4 +92,3 @@ describe('MainSidebar', () => {
         expect(drawerStyle).toHaveProperty('zIndex', 0);
     });
 });
-

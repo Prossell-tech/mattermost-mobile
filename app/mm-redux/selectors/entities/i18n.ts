@@ -12,4 +12,3 @@ export function getCurrentUserLocale(state: GlobalState, defaultLocale = General
 
     return currentUser.locale || defaultLocale;
 }
-

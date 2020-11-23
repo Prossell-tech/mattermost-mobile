@@ -318,4 +318,3 @@ exports[`PostPreHeader should match snapshot when pinned and not flagged 1`] = `
 `;
 
 exports[`PostPreHeader should match snapshot when pinned post is set but skipPinnedHeader is true 1`] = `null`;
-

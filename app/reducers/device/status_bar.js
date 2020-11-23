@@ -12,4 +12,3 @@ export default function height(state = 0, action) {
     }
 }
 
-

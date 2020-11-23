@@ -14,4 +14,3 @@ export function handleRemoveChannelMembers(channelId, members) {
         }
     };
 }
-

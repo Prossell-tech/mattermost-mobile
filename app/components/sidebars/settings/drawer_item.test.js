@@ -29,4 +29,3 @@ describe('DrawerItem', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

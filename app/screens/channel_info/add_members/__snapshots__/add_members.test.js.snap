@@ -74,4 +74,3 @@ exports[`ChannelInfo -> Add Members should match snapshot 1`] = `
   />
 </React.Fragment>
 `;
-

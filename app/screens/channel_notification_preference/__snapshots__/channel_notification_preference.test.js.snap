@@ -282,4 +282,3 @@ exports[`ChannelNotificationPreference should match snapshot 1`] = `
   </View>
 </Connect(SafeAreaIos)>
 `;
-

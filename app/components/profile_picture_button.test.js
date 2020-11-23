@@ -55,4 +55,3 @@ describe('profile_picture_button', () => {
         expect(wrapper.state('extraOptions')).not.toEqual([null]);
     });
 });
-

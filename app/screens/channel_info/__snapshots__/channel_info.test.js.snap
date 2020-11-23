@@ -1383,4 +1383,3 @@ exports[`channelInfo should not include NotificationPreference for direct messag
   />
 </React.Fragment>
 `;
-

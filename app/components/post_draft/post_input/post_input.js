@@ -316,4 +316,3 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => ({
         minHeight: 30,
     },
 }));
-

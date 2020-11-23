@@ -128,4 +128,3 @@ userProfileRow.defaultProps = {
 };
 
 export default userProfileRow;
-

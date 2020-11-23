@@ -26,4 +26,3 @@ describe('Badge', () => {
         expect(wrapper.find(Text).first().props().children).toContain('99+');
     });
 });
-

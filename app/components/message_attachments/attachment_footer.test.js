@@ -62,4 +62,3 @@ describe('AttachmentFooter', () => {
         expect(wrapper).toMatchSnapshot();
     });
 });
-

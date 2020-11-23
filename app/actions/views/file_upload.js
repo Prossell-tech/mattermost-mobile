@@ -100,4 +100,3 @@ export function handleRemoveLastFile(channelId, rootId) {
         rootId,
     };
 }
-

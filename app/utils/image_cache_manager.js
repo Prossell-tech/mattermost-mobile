@@ -158,4 +158,3 @@ const notifyAll = (uri, path) => {
         }
     });
 };
-

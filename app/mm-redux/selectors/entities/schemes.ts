@@ -80,4 +80,3 @@ export function makeGetSchemeTeams() {
         schemeId: string;
     }) => Array<Team>);
 }
-

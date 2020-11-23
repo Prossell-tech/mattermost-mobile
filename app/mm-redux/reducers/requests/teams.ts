@@ -43,4 +43,3 @@ export default (combineReducers({
     getMyTeams,
     joinTeam,
 }) as (b: TeamsRequestsStatuses, a: GenericAction) => TeamsRequestsStatuses);
-

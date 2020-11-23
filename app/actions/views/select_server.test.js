@@ -32,4 +32,3 @@ describe('Actions.Views.SelectServer', () => {
         expect(store.getActions()).toEqual([actions]);
     });
 });
-

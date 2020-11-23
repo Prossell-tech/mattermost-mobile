@@ -302,4 +302,3 @@ export default combineReducers({
     // Boolean true if we are getting more search results
     isSearchGettingMore,
 });
-

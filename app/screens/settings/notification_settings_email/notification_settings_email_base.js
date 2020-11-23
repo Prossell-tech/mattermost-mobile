@@ -114,4 +114,3 @@ export default class NotificationSettingsEmailBase extends PureComponent {
         ).toString();
     }
 }
-

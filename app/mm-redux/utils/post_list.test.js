@@ -1727,4 +1727,3 @@ describe('messageCount', () => {
         expect(messageCount(postIds)).toEqual(2);
     });
 });
-

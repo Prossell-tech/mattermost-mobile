@@ -187,4 +187,3 @@ const style = StyleSheet.create({
         padding: 10,
     },
 });
-

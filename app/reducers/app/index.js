@@ -12,4 +12,3 @@ export default combineReducers({
     version,
     previousVersion,
 });
-

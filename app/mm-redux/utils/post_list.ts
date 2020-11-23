@@ -440,4 +440,3 @@ export function messageCount(postIds: string[]) {
 
     return messagePostIds.length;
 }
-

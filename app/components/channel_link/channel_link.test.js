@@ -148,4 +148,3 @@ describe('ChannelLink', () => {
         expect(newProps.onChannelLinkPress).toHaveBeenCalledTimes(1);
     });
 });
-

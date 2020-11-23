@@ -53,7 +53,7 @@ describe('FormattedTime', () => {
         );
 
         expect(koViewOne.toJSON()).toMatchSnapshot();
-        expect(koViewOne.getByText('ÅE§˙∑ÅE7:02')).toBeTruthy();
+        expect(koViewOne.getByText('Ïò§ÌõÑ 7:02')).toBeTruthy();
 
         const koViewTwo = renderWithIntl(
             <FormattedTime
@@ -93,4 +93,3 @@ describe('FormattedTime', () => {
         expect(viewTwo.getByText('8:47')).toBeTruthy();
     });
 });
-

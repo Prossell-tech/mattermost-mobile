@@ -88,4 +88,3 @@ describe('UserListRow', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

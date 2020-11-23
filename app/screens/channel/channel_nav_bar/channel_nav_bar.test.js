@@ -125,4 +125,3 @@ describe('ChannelNavBar', () => {
         expect(wrapper.instance().drawerButtonVisible()).toBe(true);
     });
 });
-

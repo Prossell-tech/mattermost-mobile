@@ -69,4 +69,3 @@ exports[`ChannelInfoRow should match snapshot 1`] = `
   </View>
 </ForwardRef>
 `;
-

@@ -191,4 +191,3 @@ export const renderSystemMessage = (postBodyProps, styles, intl) => {
     }
     return renderer(postBodyProps, styles, intl);
 };
-

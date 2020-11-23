@@ -76,4 +76,3 @@ exports[`RecentMentions should match snapshot when getRecentMentions failed 1`] 
   />
 </View>
 `;
-

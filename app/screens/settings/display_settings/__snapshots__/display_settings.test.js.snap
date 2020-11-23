@@ -197,4 +197,3 @@ exports[`DisplaySettings should match snapshot on Tablet devices 1`] = `
   </View>
 </View>
 `;
-

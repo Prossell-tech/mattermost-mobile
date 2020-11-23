@@ -57,4 +57,3 @@ describe('PasteableTextInput', () => {
         expect(emit).toHaveBeenCalledTimes(1);
     });
 });
-

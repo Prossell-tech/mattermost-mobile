@@ -121,4 +121,3 @@ export function buildQueryString(parameters: Dictionary<any>): string {
 
     return query;
 }
-

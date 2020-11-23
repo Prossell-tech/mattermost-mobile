@@ -45,4 +45,3 @@ export default class Hashtag extends React.PureComponent {
         );
     }
 }
-

@@ -53,4 +53,3 @@ describe('ReactionHeaderItem', () => {
         expect(onPress).toHaveBeenCalledWith(baseProps.emojiName, baseProps.highlight);
     });
 });
-

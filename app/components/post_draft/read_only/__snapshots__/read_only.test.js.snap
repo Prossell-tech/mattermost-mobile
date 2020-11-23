@@ -48,4 +48,3 @@ exports[`PostDraft ReadOnly Should match snapshot 1`] = `
   </View>
 </ForwardRef(SafeAreaView)>
 `;
-

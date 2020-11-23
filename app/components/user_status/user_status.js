@@ -54,4 +54,3 @@ export default class UserStatus extends PureComponent {
         );
     }
 }
-

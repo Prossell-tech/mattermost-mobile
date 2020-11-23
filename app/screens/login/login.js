@@ -457,4 +457,3 @@ const style = StyleSheet.create({
         color: '#2389D7',
     },
 });
-

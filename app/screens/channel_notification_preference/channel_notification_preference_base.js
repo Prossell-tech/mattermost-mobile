@@ -102,4 +102,3 @@ export default class ChannelNotificationPreferenceBase extends PureComponent {
         }
     });
 }
-

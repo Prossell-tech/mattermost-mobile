@@ -21,4 +21,3 @@ export function sortTeamsWithLocale(locale: string): (a: Team, b: Team) => numbe
         return a.name.toLowerCase().localeCompare(b.name.toLowerCase(), locale || General.DEFAULT_LOCALE, {numeric: true});
     };
 }
-

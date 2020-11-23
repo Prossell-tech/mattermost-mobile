@@ -18,4 +18,3 @@ const Files: Dictionary<string[]> = {
 };
 
 export default Files;
-

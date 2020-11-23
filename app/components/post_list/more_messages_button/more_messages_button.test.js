@@ -887,4 +887,3 @@ describe('MoreMessagesButton', () => {
         });
     });
 });
-

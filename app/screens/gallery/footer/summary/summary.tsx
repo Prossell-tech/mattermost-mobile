@@ -68,4 +68,3 @@ const Summary = (props: SummaryProps) => {
 };
 
 export default Summary;
-

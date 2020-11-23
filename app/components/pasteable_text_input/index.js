@@ -74,4 +74,3 @@ const WrappedPasteableTextInput = (props, ref) => (
 );
 
 export default React.forwardRef(WrappedPasteableTextInput);
-

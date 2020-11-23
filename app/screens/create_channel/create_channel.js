@@ -197,4 +197,3 @@ export default class CreateChannel extends PureComponent {
     }
 }
 
-

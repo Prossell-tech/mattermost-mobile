@@ -29,4 +29,3 @@ export default class StatusBar extends PureComponent {
         return <NativeStatusBar barStyle={barStyle}/>;
     }
 }
-

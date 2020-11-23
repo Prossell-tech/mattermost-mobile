@@ -35,4 +35,3 @@ export type EmojisState = {
     };
     nonExistentEmoji: Set<string>;
 };
-

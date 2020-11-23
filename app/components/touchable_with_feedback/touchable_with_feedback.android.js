@@ -60,4 +60,3 @@ export default class TouchableWithFeedbackAndroid extends PureComponent {
         return null;
     }
 }
-

@@ -60,4 +60,3 @@ exports[`AtMention should match snapshot, without highlight 1`] = `
   </Text>
 </Text>
 `;
-

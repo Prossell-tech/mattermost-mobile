@@ -30,4 +30,3 @@ function accounts(state: Dictionary<Bot> = {}, action: GenericAction) {
 export default combineReducers({
     accounts,
 });
-

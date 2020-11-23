@@ -52,4 +52,3 @@ export default class TextInputWithLocalizedPlaceholder extends PureComponent {
         );
     }
 }
-

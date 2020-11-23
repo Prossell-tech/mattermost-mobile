@@ -54,4 +54,3 @@ export default class Pinned extends PureComponent<PinnedProps> {
         );
     }
 }
-

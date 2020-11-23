@@ -99,4 +99,3 @@ describe('MiniPreview', () => {
         expect(selectHighResImage().length).toEqual(1);
     });
 });
-

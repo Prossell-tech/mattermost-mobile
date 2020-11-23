@@ -66,4 +66,3 @@ export type GroupSearchOpts = {
     is_linked?: boolean;
     is_configured?: boolean;
 };
-

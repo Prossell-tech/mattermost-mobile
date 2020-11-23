@@ -29,4 +29,3 @@ describe('SettingsSidebar', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

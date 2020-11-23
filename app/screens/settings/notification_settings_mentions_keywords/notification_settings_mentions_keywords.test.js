@@ -26,4 +26,3 @@ describe('NotificationSettingsMentionsKeywords', () => {
         expect(wrapper.instance()).toMatchSnapshot();
     });
 });
-

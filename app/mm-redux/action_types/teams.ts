@@ -57,4 +57,3 @@ export default keyMirror({
 
     RECEIVED_TOTAL_TEAM_COUNT: null,
 });
-

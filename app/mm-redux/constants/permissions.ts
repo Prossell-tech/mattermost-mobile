@@ -82,4 +82,3 @@ export default {
     MANAGE_BOTS: 'manage_bots',
     MANAGE_OTHERS_BOTS: 'manage_others_bots',
 };
-

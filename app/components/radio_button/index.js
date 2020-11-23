@@ -10,4 +10,3 @@ export {
 };
 
 export default RadioButtonGroup;
-

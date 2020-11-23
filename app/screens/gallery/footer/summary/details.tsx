@@ -82,4 +82,3 @@ const Details = ({channel, isDirect, ownPost, user}: DetailsProps) => {
 };
 
 export default Details;
-

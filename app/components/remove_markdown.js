@@ -78,4 +78,3 @@ export default class RemoveMarkdown extends React.PureComponent {
         return <Text>{this.renderer.render(ast)}</Text>;
     }
 }
-

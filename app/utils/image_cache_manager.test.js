@@ -314,4 +314,3 @@ describe('ImageCacheManager.cache', () => {
         expect(localFilename).toEqual(`${expectedHash}.png`);
     });
 });
-

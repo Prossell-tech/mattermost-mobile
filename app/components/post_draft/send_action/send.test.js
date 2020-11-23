@@ -45,4 +45,3 @@ describe('SendAction', () => {
         expect(wrapper.childAt(0)).toHaveStyle('backgroundColor', changeOpacity(baseProps.theme.buttonBg, 0.3));
     });
 });
-

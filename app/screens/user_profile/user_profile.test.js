@@ -162,4 +162,3 @@ describe('user_profile', () => {
         expect(dismissModal).toHaveBeenCalledTimes(1);
     });
 });
-

@@ -66,4 +66,3 @@ export default class MessageAttachments extends PureComponent {
         );
     }
 }
-

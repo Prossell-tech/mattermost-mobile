@@ -25,4 +25,3 @@ function websocket(state: RequestStatusType = initialRequestState(), action: Gen
 export default (combineReducers({
     websocket,
 }) as (b: GeneralRequestsStatuses, a: GenericAction) => GeneralRequestsStatuses);
-

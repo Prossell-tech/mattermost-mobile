@@ -53,4 +53,3 @@ const style = StyleSheet.create({
         marginTop: 5,
     },
 });
-

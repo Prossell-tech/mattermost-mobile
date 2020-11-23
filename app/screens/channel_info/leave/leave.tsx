@@ -147,4 +147,3 @@ export default class Leave extends PureComponent<LeaveProps> {
         );
     }
 }
-

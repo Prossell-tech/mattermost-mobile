@@ -254,4 +254,3 @@ const style = StyleSheet.create({
         height: 24,
     },
 });
-

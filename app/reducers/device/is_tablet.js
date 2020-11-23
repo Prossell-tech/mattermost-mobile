@@ -12,4 +12,3 @@ export default function isTablet(state = false, action) {
     return state;
 }
 
-

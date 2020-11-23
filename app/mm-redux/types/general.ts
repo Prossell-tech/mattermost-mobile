@@ -18,4 +18,3 @@ export type FormattedMsg = {
     id: string;
     defaultMessage: string;
 };
-

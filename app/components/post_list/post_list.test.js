@@ -153,4 +153,3 @@ describe('PostList', () => {
         expect(EventEmitter.off).toHaveBeenCalledWith(NavigationTypes.NAVIGATION_DISMISS_AND_POP_TO_ROOT, instance.handleClosePermalink);
     });
 });
-

@@ -15,4 +15,3 @@ export function wrapWithContextProvider(Comp, excludeEvents = true) {
         );
     };
 }
-

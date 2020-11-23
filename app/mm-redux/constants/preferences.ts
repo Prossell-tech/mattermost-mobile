@@ -155,4 +155,3 @@ const Preferences: Dictionary<any> = {
 };
 
 export default Preferences;
-

@@ -32,4 +32,3 @@ describe('Search RecentItem', () => {
         expect(baseProps.setModifierValue).toHaveBeenCalledWith(item.value);
     });
 });
-

@@ -166,4 +166,3 @@ export default class LastUsers extends React.PureComponent {
         return this.renderCollapsedView();
     }
 }
-

@@ -72,4 +72,3 @@ const getStyleFromTheme = makeStyleSheetFromTheme((theme) => {
 });
 
 export default memo(NewMessagesDivider);
-

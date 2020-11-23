@@ -27,4 +27,3 @@ describe('i18n utils', () => {
         assert.equal(localizeMessage(testKey, testValue), prevValue);
     });
 });
-

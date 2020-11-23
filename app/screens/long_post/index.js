@@ -39,4 +39,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(makeMapStateToProps, mapDispatchToProps)(LongPost);
-

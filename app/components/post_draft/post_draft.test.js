@@ -147,4 +147,3 @@ describe('PostDraft', () => {
         expect(queryByText('Close Channel')).toBeNull();
     });
 });
-

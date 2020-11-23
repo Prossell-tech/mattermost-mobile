@@ -247,4 +247,3 @@ export default combineReducers({
     search: searchReducer,
     cache: cacheReducer,
 });
-

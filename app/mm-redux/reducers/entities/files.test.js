@@ -494,4 +494,3 @@ describe('reducers/entities/files', () => {
         });
     });
 });
-

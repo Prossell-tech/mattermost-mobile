@@ -85,4 +85,3 @@ exports[`ChannelInfo -> Mute should match snapshot for Not Muted 1`] = `
   togglable={true}
 />
 `;
-

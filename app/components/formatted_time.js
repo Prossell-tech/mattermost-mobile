@@ -48,4 +48,3 @@ export default class FormattedTime extends React.PureComponent {
         return <Text style={style}>{formattedTime}</Text>;
     }
 }
-

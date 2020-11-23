@@ -2695,20 +2695,20 @@ describe('Components.Markdown.transform', () => {
             },
         }, {
             name: 'multibyte keyword',
-            input: '我爱吁E��茁E��饭',
-            mentionKeys: [{key: '番茁E}],
+            input: '我爱吃番茄炒饭',
+            mentionKeys: [{key: '番茄'}],
             expected: {
                 type: 'document',
                 children: [{
                     type: 'paragraph',
                     children: [{
                         type: 'text',
-                        literal: '我爱吁E,
+                        literal: '我爱吃',
                     }, {
                         type: 'mention_highlight',
                         children: [{
                             type: 'text',
-                            literal: '番茁E,
+                            literal: '番茄',
                         }],
                     }, {
                         type: 'text',
@@ -2718,8 +2718,8 @@ describe('Components.Markdown.transform', () => {
             },
         }, {
             name: 'multiple multibyte keywords',
-            input: 'CJK is 中國日本���국.',
-            mentionKeys: [{key: '中圁E}, {key: '日本'}, {key: '���국'}],
+            input: 'CJK is 中國日本한국.',
+            mentionKeys: [{key: '中國'}, {key: '日本'}, {key: '한국'}],
             expected: {
                 type: 'document',
                 children: [{
@@ -2731,7 +2731,7 @@ describe('Components.Markdown.transform', () => {
                         type: 'mention_highlight',
                         children: [{
                             type: 'text',
-                            literal: '中圁E,
+                            literal: '中國',
                         }],
                     }, {
                         type: 'mention_highlight',
@@ -2743,7 +2743,7 @@ describe('Components.Markdown.transform', () => {
                         type: 'mention_highlight',
                         children: [{
                             type: 'text',
-                            literal: '���국',
+                            literal: '한국',
                         }],
                     }, {
                         type: 'text',
@@ -2847,9 +2847,9 @@ describe('Components.Markdown.transform', () => {
             expected: {index: -1, mention: null},
         }, {
             name: 'multibyte key',
-            input: '�E�은 ���루 �E�세�E�E',
-            mentionKeys: [{key: '���루'}],
-            expected: {index: 3, mention: {key: '���루'}},
+            input: '좋은 하루 되세요.',
+            mentionKeys: [{key: '하루'}],
+            expected: {index: 3, mention: {key: '하루'}},
         }];
 
         for (const test of tests) {
@@ -3178,4 +3178,3 @@ function stripUnusedFields(node) {
 
     return node;
 }
-

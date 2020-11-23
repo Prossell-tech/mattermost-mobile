@@ -6,4 +6,3 @@ export type Reaction = {
     emoji_name: string;
     create_at: number;
 };
-

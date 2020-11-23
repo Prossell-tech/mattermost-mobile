@@ -573,4 +573,3 @@ export default combineReducers({
     // Total user stats
     stats,
 });
-

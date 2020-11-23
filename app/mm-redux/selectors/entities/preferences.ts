@@ -265,4 +265,3 @@ export function shouldAutocloseDMs(state: GlobalState) {
     const preference = get(state, Preferences.CATEGORY_SIDEBAR_SETTINGS, Preferences.CHANNEL_SIDEBAR_AUTOCLOSE_DMS, Preferences.AUTOCLOSE_DMS_ENABLED);
     return preference === Preferences.AUTOCLOSE_DMS_ENABLED;
 }
-

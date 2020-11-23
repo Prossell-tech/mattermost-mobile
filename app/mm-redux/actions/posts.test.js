@@ -1889,4 +1889,3 @@ describe('Actions.Posts', () => {
         });
     });
 });
-

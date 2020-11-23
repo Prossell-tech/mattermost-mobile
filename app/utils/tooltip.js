@@ -10,4 +10,3 @@ export function setToolTipVisible(visible = true) {
 export function getToolTipVisible() {
     return isToolTipVisible;
 }
-

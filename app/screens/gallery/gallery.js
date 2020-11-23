@@ -172,4 +172,3 @@ export default class Gallery extends PureComponent {
         );
     }
 }
-

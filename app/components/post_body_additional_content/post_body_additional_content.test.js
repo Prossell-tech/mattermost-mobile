@@ -50,4 +50,3 @@ describe('PostBodyAdditionalContent', () => {
         expect(baseProps.actions.getRedirectLocation).toHaveBeenCalledTimes(1);
     });
 });
-

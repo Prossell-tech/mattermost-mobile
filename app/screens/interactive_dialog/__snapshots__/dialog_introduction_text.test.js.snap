@@ -127,4 +127,3 @@ exports[`DialogIntroductionText should render the introduction text correctly 1`
   />
 </View>
 `;
-

@@ -107,4 +107,3 @@ export type ChannelMemberCountByGroup = {
 };
 
 export type ChannelMemberCountsByGroup = Record<string, ChannelMemberCountByGroup>;
-

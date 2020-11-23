@@ -263,4 +263,3 @@ describe('Websocket Post Events', () => {
         assert.equal(state.entities.teams.myMembers[teamId].mention_count, 4);
     });
 });
-

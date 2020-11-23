@@ -150,4 +150,3 @@ export default class ThreadBase extends PureComponent {
         });
     }
 }
-

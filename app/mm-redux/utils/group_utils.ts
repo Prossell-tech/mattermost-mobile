@@ -33,4 +33,3 @@ export function filterGroupsMatchingTerm(groups: Array<Group>, term: string): Ar
             some((suggestion) => suggestion.startsWith(trimmedTerm));
     });
 }
-

@@ -14,4 +14,3 @@ export function handleAddChannelMembers(channelId, members) {
         }
     };
 }
-

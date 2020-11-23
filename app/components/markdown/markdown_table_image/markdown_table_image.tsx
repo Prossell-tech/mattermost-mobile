@@ -120,4 +120,3 @@ const MarkTableImage = ({disable, imagesMetadata, postId, serverURL, source}: Ma
 };
 
 export default MarkTableImage;
-

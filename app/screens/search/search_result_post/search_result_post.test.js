@@ -28,4 +28,3 @@ describe('SearchResultPost', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

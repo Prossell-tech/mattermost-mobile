@@ -49,4 +49,3 @@ export function cleanUrlForLogging(baseUrl: string, apiUrl: string): string {
 
     return url;
 }
-

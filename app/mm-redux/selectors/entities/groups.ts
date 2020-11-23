@@ -227,4 +227,3 @@ export const getMyGroupMentionKeysForChannel: (state: GlobalState, teamId: strin
         return keys;
     },
 );
-

@@ -106,4 +106,3 @@ export function permalinkBadTeam(intl) {
 
     alertErrorWithFallback(intl, {}, message);
 }
-

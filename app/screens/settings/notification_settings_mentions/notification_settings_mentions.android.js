@@ -454,4 +454,3 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default injectIntl(NotificationSettingsMentionsAndroid);
-

@@ -303,4 +303,3 @@ const GalleryViewer = (props: GalleryProps) => {
 };
 
 export default GalleryViewer;
-

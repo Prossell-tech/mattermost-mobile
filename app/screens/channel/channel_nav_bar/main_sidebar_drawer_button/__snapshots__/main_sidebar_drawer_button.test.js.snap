@@ -108,4 +108,3 @@ exports[`MainSidebarDrawerButton should match, full snapshot 2`] = `
   </View>
 </ForwardRef>
 `;
-

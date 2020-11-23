@@ -43,4 +43,3 @@ describe('FileAttachment', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

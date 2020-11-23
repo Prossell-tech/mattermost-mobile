@@ -175,4 +175,3 @@ const GalleryVideo = (props: GalleryFileProps) => {
 };
 
 export default injectIntl(GalleryVideo);
-

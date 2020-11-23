@@ -6,4 +6,3 @@ export default keyMirror({
     RECEIVED_MARKETPLACE_PLUGINS: null,
     GET_MARKETPLACE_PLUGINS_FAILURE: null,
 });
-

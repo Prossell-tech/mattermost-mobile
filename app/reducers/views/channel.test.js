@@ -49,4 +49,3 @@ describe('Reducers.channel', () => {
         expect(handleSetTempUploadFilesForPostDraft(initialState, action)).toEqual(expectedState);
     });
 });
-

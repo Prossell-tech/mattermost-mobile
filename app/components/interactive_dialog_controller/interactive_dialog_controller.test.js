@@ -77,4 +77,3 @@ function getBaseProps(triggerId, elements, introductionText) {
         theme: {},
     };
 }
-

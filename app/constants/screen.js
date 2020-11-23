@@ -2,4 +2,3 @@
 // See LICENSE.txt for license information.
 
 export const THREAD = 'thread';
-

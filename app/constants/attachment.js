@@ -3,4 +3,3 @@
 
 export const ATTACHMENT_DOWNLOAD = 'attachment_download';
 export const MAX_ATTACHMENT_FOOTER_LENGTH = 300;
-

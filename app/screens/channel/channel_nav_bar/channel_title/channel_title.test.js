@@ -74,4 +74,3 @@ describe('ChannelTitle', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

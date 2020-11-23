@@ -6,4 +6,3 @@ export default {
     channelSwitch: 0,
     teamSwitch: 0,
 };
-

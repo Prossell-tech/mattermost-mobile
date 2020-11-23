@@ -143,4 +143,3 @@ exports[`CustomList should match snapshot, renderSeparator 1`] = `
   }
 />
 `;
-

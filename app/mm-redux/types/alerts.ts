@@ -6,4 +6,3 @@ export type AlertType = {
     type: AlertTypeType;
     message: string;
 };
-

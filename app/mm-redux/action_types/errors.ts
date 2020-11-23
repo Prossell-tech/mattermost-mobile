@@ -8,4 +8,3 @@ export default keyMirror({
     CLEAR_ERRORS: null,
     RESTORE_ERRORS: null,
 });
-

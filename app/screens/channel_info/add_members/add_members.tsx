@@ -55,4 +55,3 @@ export default class AddMembers extends PureComponent<AddMembersProps> {
         return null;
     }
 }
-

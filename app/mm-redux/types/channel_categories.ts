@@ -20,4 +20,3 @@ export type ChannelCategoriesState = {
     byId: IDMappedObjects<ChannelCategory>;
     orderByTeam: RelationOneToOne<Team, $ID<ChannelCategory>[]>;
 };
-

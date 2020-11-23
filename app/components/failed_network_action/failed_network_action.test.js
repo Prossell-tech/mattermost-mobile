@@ -33,4 +33,3 @@ describe('FailedNetworkAction', () => {
         await waitFor(() => expect(queryByTestId('failed_network_action.cloud_icon')).toBeNull());
     });
 });
-

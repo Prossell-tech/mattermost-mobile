@@ -184,4 +184,3 @@ describe('Actions.Helpers.Channels', () => {
         });
     });
 });
-

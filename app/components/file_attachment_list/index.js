@@ -21,4 +21,3 @@ function makeMapStateToProps() {
 }
 
 export default connect(makeMapStateToProps)(FileAttachmentList);
-

@@ -39,4 +39,3 @@ describe('should match return value of getInitialPosition', () => {
         });
     }
 });
-

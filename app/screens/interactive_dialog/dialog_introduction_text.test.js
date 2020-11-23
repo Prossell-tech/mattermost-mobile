@@ -37,4 +37,3 @@ describe('DialogIntroductionText', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

@@ -45,4 +45,3 @@ const WebsocketEvents = {
     RECEIVED_GROUP: 'received_group',
 };
 export default WebsocketEvents;
-

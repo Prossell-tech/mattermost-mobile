@@ -130,4 +130,3 @@ describe('Actions.Bots', () => {
         assert.equal(bot.owner_id, botsResult.owner_id);
     });
 });
-

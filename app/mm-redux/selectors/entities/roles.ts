@@ -222,4 +222,3 @@ export const haveICurrentChannelPermission = reselect.createSelector(
         return options.default === true || hasPermission;
     },
 );
-

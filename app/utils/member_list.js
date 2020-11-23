@@ -44,4 +44,3 @@ export function markSelectedProfiles(profiles, selectedProfiles) {
         return profile;
     });
 }
-

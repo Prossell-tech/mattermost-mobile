@@ -1452,4 +1452,3 @@ export default {
     enableUserAccessToken,
     checkForModifiedUsers,
 };
-

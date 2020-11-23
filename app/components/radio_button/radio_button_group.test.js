@@ -41,4 +41,3 @@ describe('RadioButtonGroup', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

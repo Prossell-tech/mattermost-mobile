@@ -55,4 +55,3 @@ describe('Selectors.Integrations', () => {
         assert.deepEqual(getAutocompleteCommandsList(testState), autocompleteCommandsForTeam);
     });
 });
-

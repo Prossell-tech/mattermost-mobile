@@ -17,4 +17,3 @@ export default {
         showModalOverCurrentContext('OptionsModal', {title: '', items});
     },
 };
-

@@ -41,4 +41,3 @@ exports[`PostAttachmentImage should match snapshot 1`] = `
   </View>
 </TouchableWithFeedbackIOS>
 `;
-

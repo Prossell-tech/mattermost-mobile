@@ -65,4 +65,3 @@ function throwOnImmutableMutation(key: string, value: any) {
 function identity(value: any): any {
     return value;
 }
-

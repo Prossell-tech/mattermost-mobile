@@ -776,4 +776,3 @@ export function resetUnreadMessageCount(channelId) {
         });
     };
 }
-

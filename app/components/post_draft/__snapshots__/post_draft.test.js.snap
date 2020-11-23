@@ -669,4 +669,3 @@ exports[`PostDraft Should render the ReadOnly for channelIsReadOnly 1`] = `
   </View>
 </RCTSafeAreaView>
 `;
-

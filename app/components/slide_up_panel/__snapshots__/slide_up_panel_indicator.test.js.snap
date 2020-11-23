@@ -23,4 +23,3 @@ exports[`SlideUpPanelIndicator should match snapshot 1`] = `
   />
 </ForwardRef(AnimatedComponentWrapper)>
 `;
-

@@ -22,4 +22,3 @@ export default function gifycat(key: string, secret: string): any {
     instance = new Gfycat({client_id: key, client_secret: secret});
     return instance;
 }
-

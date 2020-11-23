@@ -80,4 +80,3 @@ describe('SidebarSettings', () => {
         expect(mainSidebar.state('permanentSidebar')).toBe(true);
     });
 });
-

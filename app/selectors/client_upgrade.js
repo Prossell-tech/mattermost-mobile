@@ -32,4 +32,3 @@ const getClientUpgrade = createSelector(
 );
 
 export default getClientUpgrade;
-

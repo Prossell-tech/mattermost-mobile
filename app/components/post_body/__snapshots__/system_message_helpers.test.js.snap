@@ -163,4 +163,3 @@ exports[`renderSystemMessage uses renderer for unarchived channel 1`] = `
   </Text>
 </View>
 `;
-

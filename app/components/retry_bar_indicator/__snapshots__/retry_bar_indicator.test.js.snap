@@ -33,4 +33,3 @@ exports[`RetryBarIndicator should match snapshot 1`] = `
   />
 </ForwardRef(AnimatedComponentWrapper)>
 `;
-

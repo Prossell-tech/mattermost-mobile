@@ -39,4 +39,3 @@ exports[`Fade should render {opacity: 1} 1`] = `
   </Text>
 </ForwardRef(AnimatedComponentWrapper)>
 `;
-

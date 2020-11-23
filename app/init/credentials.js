@@ -130,4 +130,3 @@ async function getInternetCredentials(url) {
         return null;
     }
 }
-

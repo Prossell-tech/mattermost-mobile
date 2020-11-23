@@ -14,4 +14,3 @@ export function selectFirstAvailableTeam(teams, primaryTeamName) {
 
     return defaultTeam;
 }
-

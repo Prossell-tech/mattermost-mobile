@@ -184,4 +184,3 @@ const initFetchConfig = async () => {
 initFetchConfig();
 
 export default initFetchConfig;
-

@@ -8,4 +8,3 @@ export default {
     PLUGIN_STATE_FAILED_TO_STAY_RUNNING: 4,
     PLUGIN_STATE_STOPPING: 5,
 };
-

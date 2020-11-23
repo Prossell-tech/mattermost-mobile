@@ -207,4 +207,3 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default injectIntl(AdvancedSettings);
-

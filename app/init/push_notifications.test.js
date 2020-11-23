@@ -94,4 +94,3 @@ describe('PushNotification', () => {
         expect(setApplicationIconBadgeNumber).toHaveBeenCalledWith(stateBadgeCount);
     });
 });
-

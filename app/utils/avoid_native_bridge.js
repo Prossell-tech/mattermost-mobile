@@ -17,4 +17,3 @@ export default function avoidNativeBridge(runOptimized, optimized, fallback) {
 
     return fallback();
 }
-

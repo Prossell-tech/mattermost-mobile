@@ -22,4 +22,3 @@ export const checkForFileUploadingInChannel = createSelector(
         return files.some((f) => f.loading);
     },
 );
-

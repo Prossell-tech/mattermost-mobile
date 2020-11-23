@@ -40,4 +40,3 @@ exports[`ChannelPostList should match snapshot 1`] = `
   <Connect(RetryBarIndicator) />
 </ForwardRef(AnimatedComponentWrapper)>
 `;
-

@@ -32,4 +32,3 @@ class Telemetry {
 
 const telemetry = new Telemetry();
 export default telemetry;
-

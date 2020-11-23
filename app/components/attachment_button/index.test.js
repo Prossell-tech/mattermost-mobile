@@ -133,4 +133,3 @@ describe('AttachmentButton', () => {
         expect(StatusBar.setHidden).toHaveBeenCalledWith(false);
     });
 });
-

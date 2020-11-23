@@ -32,4 +32,3 @@ export function getTimezoneRegion(timezone: string): string {
 
     return timezone;
 }
-

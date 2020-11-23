@@ -171,4 +171,3 @@ describe('FileAttachmentList', () => {
         expect(wrapper.instance().getFilesForGallery).toHaveBeenCalled();
     });
 });
-

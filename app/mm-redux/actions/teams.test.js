@@ -768,4 +768,3 @@ describe('Actions.Teams', () => {
         assert.ok(response.data.teams.length === 2);
     });
 });
-

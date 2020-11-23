@@ -33,4 +33,3 @@ describe('components/widgets/settings/TextSetting', () => {
         expect(onChange).toHaveBeenCalledWith('elementid', true);
     });
 });
-

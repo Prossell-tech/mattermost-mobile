@@ -140,4 +140,3 @@ exports[`NotificationSettingsEmailAndroid should match snapshot 2`] = `
   </View>
 </Component>
 `;
-

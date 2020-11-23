@@ -47,4 +47,3 @@ export default (combineReducers({
     // object where every key is a job type and contains a list of jobs.
     jobsByTypeList,
 }) as (b: JobsState, a: GenericAction) => JobsState);
-

@@ -101,4 +101,3 @@ exports[`SendAction should render theme backgroundColor 1`] = `
   </View>
 </TouchableWithFeedbackIOS>
 `;
-

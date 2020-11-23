@@ -97,4 +97,3 @@ describe('RecentMentions', () => {
         expect(showSearchModal).toHaveBeenCalledWith(`#${hashtag}`);
     });
 });
-

@@ -55,4 +55,3 @@ describe('ReactionList', () => {
         expect(wrapper.state('selected')).toEqual('+1');
     });
 });
-

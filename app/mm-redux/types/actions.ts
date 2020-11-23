@@ -56,4 +56,3 @@ export function enableBatching<S>(reduce: Reducer<S>): Reducer<S> {
         return reduce(state, action);
     };
 }
-

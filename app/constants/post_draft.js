@@ -16,4 +16,3 @@ export const MAX_FILE_COUNT_WARNING = 'onMaxFileCountWarning';
 export const UPLOAD_FILES = 'onUploadFiles';
 export const PASTE_FILES = 'onPasteFiles';
 export const UPDATE_NATIVE_SCROLLVIEW = 'onUpdateNativeScrollView';
-

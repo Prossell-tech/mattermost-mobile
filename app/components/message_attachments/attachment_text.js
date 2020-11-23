@@ -119,4 +119,3 @@ const style = StyleSheet.create({
         paddingRight: 60,
     },
 });
-

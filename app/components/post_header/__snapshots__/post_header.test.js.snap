@@ -905,4 +905,3 @@ exports[`PostHeader should match snapshot when post should display reply button 
   </View>
 </React.Fragment>
 `;
-

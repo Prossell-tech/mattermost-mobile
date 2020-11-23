@@ -44,4 +44,3 @@ describe('should match return value on getChannelFromChannelName', () => {
         });
     }
 });
-

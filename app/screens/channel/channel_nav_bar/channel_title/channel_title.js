@@ -223,4 +223,3 @@ const getStyle = makeStyleSheetFromTheme((theme) => {
         },
     };
 });
-

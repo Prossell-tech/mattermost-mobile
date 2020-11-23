@@ -24,4 +24,3 @@ export type SchemePatch = {
     name?: string;
     description?: string;
 };
-

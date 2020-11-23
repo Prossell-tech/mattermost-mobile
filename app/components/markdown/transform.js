@@ -396,4 +396,3 @@ function wrapNode(wrapper, node) {
     wrapper._lastChild = node;
     node._parent = wrapper;
 }
-

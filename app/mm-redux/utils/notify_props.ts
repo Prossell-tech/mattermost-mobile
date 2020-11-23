@@ -27,4 +27,3 @@ export function getEmailInterval(enableEmailNotification: boolean, enableEmailBa
 
     return emailIntervalPreference;
 }
-

@@ -773,4 +773,3 @@ describe('Actions.Integrations', () => {
         assert.equal(data.errors.name, 'some error');
     });
 });
-

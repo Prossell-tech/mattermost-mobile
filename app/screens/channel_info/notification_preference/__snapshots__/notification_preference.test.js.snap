@@ -43,4 +43,3 @@ exports[`NotificationPreference should match snapshot 1`] = `
   togglable={false}
 />
 `;
-

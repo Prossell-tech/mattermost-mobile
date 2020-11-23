@@ -54,4 +54,3 @@ export default (combineReducers({
     getRole,
     editRole,
 }) as (b: RolesRequestsStatuses, a: GenericAction) => RolesRequestsStatuses);
-

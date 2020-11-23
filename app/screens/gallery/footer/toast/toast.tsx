@@ -122,4 +122,3 @@ const Toast = forwardRef<ToastRef, ToastProps>(({theme}: ToastProps, ref) => {
 Toast.displayName = 'Toast';
 
 export default Toast;
-

@@ -30,4 +30,3 @@ describe('Selectors.Integrations', () => {
         assert.deepEqual(getCustomEmojiIdsSortedByName(testState), [emoji3.id, emoji1.id, emoji2.id]);
     });
 });
-

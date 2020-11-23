@@ -45,4 +45,3 @@ export default (combineReducers({
     editPost,
     getPostThread,
 }) as (b: PostsRequestsStatuses, a: GenericAction) => PostsRequestsStatuses);
-

@@ -236,4 +236,3 @@ const style = StyleSheet.create({
         flex: 1,
     },
 });
-

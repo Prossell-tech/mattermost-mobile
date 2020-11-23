@@ -193,4 +193,3 @@ const style = StyleSheet.create({
         overflow: 'hidden',
     },
 });
-

@@ -130,4 +130,3 @@ export function componentDidDisappearListener({componentId}) {
         EventEmitter.emit(NavigationTypes.MAIN_SIDEBAR_DID_CLOSE);
     }
 }
-

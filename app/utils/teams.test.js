@@ -34,4 +34,3 @@ describe('selectFirstAvailableTeam', () => {
         expect(defaultTeam).toBe(undefined);
     });
 });
-

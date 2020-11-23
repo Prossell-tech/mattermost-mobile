@@ -37,4 +37,3 @@ export function executeCommand(message, channelId, rootId) {
         return {data, error};
     };
 }
-

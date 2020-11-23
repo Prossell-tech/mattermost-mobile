@@ -21,4 +21,3 @@ export default keyMirror({
     REMOVE_SEARCH_POSTS: null,
     REMOVE_SEARCH_TERM: null,
 });
-

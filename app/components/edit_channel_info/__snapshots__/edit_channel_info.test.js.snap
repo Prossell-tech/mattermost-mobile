@@ -344,4 +344,3 @@ exports[`EditChannelInfo should match snapshot 1`] = `
   </View>
 </React.Fragment>
 `;
-

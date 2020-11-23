@@ -6,4 +6,3 @@ export type Error = {
     message: string;
     status_code?: number;
 };
-

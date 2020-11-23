@@ -94,4 +94,3 @@ export default class FormattedText extends React.PureComponent {
         return createElement(Text, props, ...nodes);
     }
 }
-

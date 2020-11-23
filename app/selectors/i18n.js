@@ -13,4 +13,3 @@ export function getCurrentLocale(state) {
 
     return getCurrentUserLocale(state, defaultLocale);
 }
-

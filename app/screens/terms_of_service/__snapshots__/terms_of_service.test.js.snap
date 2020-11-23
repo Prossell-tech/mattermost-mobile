@@ -464,4 +464,3 @@ exports[`TermsOfService should match snapshot on enableNavigatorLogout 1`] = `
   </ScrollView>
 </React.Fragment>
 `;
-

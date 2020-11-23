@@ -69,4 +69,3 @@ export default class TouchableWithFeedbackIOS extends PureComponent {
         return null;
     }
 }
-

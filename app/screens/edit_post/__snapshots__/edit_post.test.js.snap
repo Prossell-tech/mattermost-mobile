@@ -101,4 +101,3 @@ exports[`EditPost should match snapshot 1`] = `
   </KeyboardTrackingView>
 </React.Fragment>
 `;
-

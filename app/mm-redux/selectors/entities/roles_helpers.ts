@@ -41,4 +41,3 @@ export const getMySystemPermissions = reselect.createSelector(getMySystemRoles, 
 export const haveISystemPermission = reselect.createSelector(getMySystemPermissions, (state: GlobalState, options: PermissionsOptions) => options.permission, (permissions, permission) => {
     return permissions.has(permission);
 });
-

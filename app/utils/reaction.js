@@ -65,4 +65,3 @@ export function getSortedReactionsForHeader(reactionsByName = {}) {
 export function getUniqueUserIds(reactions = {}) {
     return Object.values(reactions).map((reaction) => reaction.user_id).filter((id, index, arr) => arr.indexOf(id) === index);
 }
-

@@ -2355,4 +2355,3 @@ describe('Actions.Channels', () => {
         assert.equal(channelMemberCounts['group-2'].channel_member_timezones_count, 131);
     });
 });
-

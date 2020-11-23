@@ -1222,4 +1222,3 @@ export default function reducer(state: Partial<PostsState> = {}, action: Generic
 
     return nextState;
 }
-

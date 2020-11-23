@@ -3959,4 +3959,3 @@ describe('removeNonRecentEmptyPostBlocks', () => {
         }]);
     });
 });
-

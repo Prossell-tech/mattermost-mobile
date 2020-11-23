@@ -38,4 +38,3 @@ export default class MarkdownList extends PureComponent {
         );
     }
 }
-

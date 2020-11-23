@@ -198,4 +198,3 @@ const style = StyleSheet.create({
         paddingTop: 15,
     },
 });
-

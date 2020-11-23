@@ -43,4 +43,3 @@ export default combineReducers({
     // Submitted menu actions per post
     submittedMenuActions,
 });
-

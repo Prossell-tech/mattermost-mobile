@@ -8,4 +8,3 @@ export default {
         return ActionSheetIOS.showActionSheetWithOptions(options, callback);
     },
 };
-

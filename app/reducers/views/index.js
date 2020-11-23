@@ -32,4 +32,3 @@ export default combineReducers({
     emoji,
     post,
 });
-

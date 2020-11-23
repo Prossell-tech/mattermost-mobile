@@ -55,4 +55,3 @@ const style = StyleSheet.create({
         width: 23,
     },
 });
-

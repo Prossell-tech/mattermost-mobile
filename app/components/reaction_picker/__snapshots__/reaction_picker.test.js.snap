@@ -523,4 +523,3 @@ exports[`Reactions Should match snapshot with default emojis 2`] = `
   </TouchableWithoutFeedback>
 </View>
 `;
-

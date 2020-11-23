@@ -626,4 +626,3 @@ export const getStyleSheetFromTheme = makeStyleSheetFromTheme((theme) => {
         },
     };
 });
-

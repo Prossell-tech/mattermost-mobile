@@ -100,4 +100,3 @@ export function sortFileInfos(fileInfos: Array<FileInfo> = [], locale: string = 
         return a.name.localeCompare(b.name, locale, {numeric: true});
     });
 }
-

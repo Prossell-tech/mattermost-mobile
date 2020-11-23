@@ -141,4 +141,3 @@ describe('Selectors.Groups', () => {
         assert.deepEqual(Selectors.getAllAssociatedGroupsForReference(testState, channelID), expected);
     });
 });
-

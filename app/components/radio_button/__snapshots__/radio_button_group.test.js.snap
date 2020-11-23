@@ -80,4 +80,3 @@ exports[`RadioButtonGroup should match snapshot 1`] = `
   />
 </View>
 `;
-

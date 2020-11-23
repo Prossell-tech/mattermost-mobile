@@ -18,4 +18,3 @@ exports[`SearchResultPost should match snapshot 1`] = `
   testID="search_result_post.post.post-id"
 />
 `;
-

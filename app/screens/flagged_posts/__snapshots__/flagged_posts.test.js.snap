@@ -73,4 +73,3 @@ exports[`FlaggedPosts should match snapshot when getFlaggedPosts failed 1`] = `
   />
 </View>
 `;
-

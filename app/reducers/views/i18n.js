@@ -24,4 +24,3 @@ function locale(state = defaultLocale, action) {
 export default combineReducers({
     locale,
 });
-

@@ -36,4 +36,3 @@ describe('utils/sentry', () => {
         }
     });
 });
-

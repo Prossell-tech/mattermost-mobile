@@ -5,4 +5,3 @@ export type Typing = {
         [x: string]: number;
     };
 };
-

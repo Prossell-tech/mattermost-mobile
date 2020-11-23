@@ -237,4 +237,3 @@ describe('ChannelItem', () => {
         expect(onSelectChannel).toHaveBeenCalledWith(expectedChannelParams, baseProps.currentChannelId);
     });
 });
-

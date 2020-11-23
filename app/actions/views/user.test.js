@@ -48,4 +48,3 @@ describe('Actions.Views.User', () => {
         expect(store.getActions()).toEqual([action]);
     });
 });
-

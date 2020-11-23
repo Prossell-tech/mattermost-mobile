@@ -430,4 +430,3 @@ export default class List extends PureComponent {
         );
     }
 }
-

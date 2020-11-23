@@ -186,4 +186,3 @@ const style = StyleSheet.create({
         justifyContent: 'flex-end',
     },
 });
-

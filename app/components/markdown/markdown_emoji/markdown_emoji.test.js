@@ -25,4 +25,3 @@ describe('MarkdownEmoji', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

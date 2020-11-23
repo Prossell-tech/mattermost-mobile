@@ -66,4 +66,3 @@ export function isYesterday(date) {
 
     return isSameDay(date, yesterday);
 }
-

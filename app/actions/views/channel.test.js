@@ -329,4 +329,3 @@ describe('Actions.Views.Channel', () => {
         expect(readAction).not.toBe(null);
     });
 });
-

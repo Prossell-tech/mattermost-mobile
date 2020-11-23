@@ -70,4 +70,3 @@ describe('AttachmentImage', () => {
         expect(state.originalWidth).toBe(32);
     });
 });
-

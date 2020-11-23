@@ -151,4 +151,3 @@ exports[`ChannelInfo -> Archive should match snapshot for Unarchive Channel 1`] 
   />
 </React.Fragment>
 `;
-

@@ -166,4 +166,3 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default NotificationSettingsEmailIos;
-

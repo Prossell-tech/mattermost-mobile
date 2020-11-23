@@ -11,4 +11,3 @@ exports[`SettingsSidebar should match snapshot 1`] = `
   useNativeAnimations={true}
 />
 `;
-

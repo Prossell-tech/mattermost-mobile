@@ -117,4 +117,3 @@ export type PostProps = {
     disable_group_highlight?: boolean;
     mentionHighlightDisabled: boolean;
 }
-

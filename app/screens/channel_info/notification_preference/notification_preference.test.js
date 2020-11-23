@@ -28,4 +28,3 @@ describe('NotificationPreference', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

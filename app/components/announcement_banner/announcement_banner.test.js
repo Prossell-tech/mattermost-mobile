@@ -32,4 +32,3 @@ describe('AnnouncementBanner', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

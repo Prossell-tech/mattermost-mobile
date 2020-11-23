@@ -20,4 +20,3 @@ export function makeGetJobsByType(type: JobType): (state: GlobalState) => Array<
         },
     );
 }
-

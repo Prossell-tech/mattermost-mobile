@@ -166,4 +166,3 @@ export function isGifTooLarge(imageMetadata) {
     // Try to estimate the in-memory size of the gif to prevent the device out of memory
     return width * height * frameCount > MAX_GIF_SIZE;
 }
-

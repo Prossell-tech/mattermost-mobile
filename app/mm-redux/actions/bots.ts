@@ -82,4 +82,3 @@ export function assignBot(botUserId: string, newOwnerId: string): ActionFunc {
         ],
     });
 }
-

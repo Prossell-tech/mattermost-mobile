@@ -146,4 +146,3 @@ describe('components/emoji_picker/emoji_picker.ios', () => {
         expect(instance.setState).not.toHaveBeenCalled();
     });
 });
-

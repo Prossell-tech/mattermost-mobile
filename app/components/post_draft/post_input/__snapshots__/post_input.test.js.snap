@@ -30,4 +30,3 @@ exports[`PostInput should match, full snapshot 1`] = `
   underlineColorAndroid="transparent"
 />
 `;
-

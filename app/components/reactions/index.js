@@ -80,4 +80,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(makeMapStateToProps, mapDispatchToProps)(Reactions);
-

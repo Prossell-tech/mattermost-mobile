@@ -48,4 +48,3 @@ export const getChannelReachable = createSelector(
     getChannel,
     (team, channel) => team && channel,
 );
-

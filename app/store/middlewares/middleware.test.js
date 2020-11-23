@@ -587,4 +587,3 @@ describe('getAllFromPostsInChannel', () => {
         expect(postIds).toMatchObject(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']);
     });
 });
-

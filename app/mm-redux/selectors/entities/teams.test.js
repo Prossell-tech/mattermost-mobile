@@ -564,4 +564,3 @@ describe('Selectors.Teams', () => {
         });
     });
 });
-

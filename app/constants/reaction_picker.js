@@ -15,4 +15,3 @@ export const DEFAULT_EMOJIS = [
     'eyes',
     'raised_hands',
 ];
-

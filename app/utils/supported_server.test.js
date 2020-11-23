@@ -20,4 +20,3 @@ describe('Unsupported Server Alert', () => {
         expect(alert.mock.calls[0][2].length).toBe(1);
     });
 });
-

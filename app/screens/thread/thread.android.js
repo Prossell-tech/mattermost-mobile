@@ -77,4 +77,3 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => ({
         height: 1,
     },
 }));
-

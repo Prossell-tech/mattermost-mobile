@@ -108,4 +108,3 @@ export default (combineReducers({
     // set containing custom emoji names that do not exist
     nonExistentEmoji,
 }) as (b: EmojisState, a: types.actions.GenericAction) => EmojisState);
-

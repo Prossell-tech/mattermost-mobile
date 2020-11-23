@@ -30,4 +30,3 @@ exports[`SafeAreaIos should match snapshot 1`] = `
   />
 </View>
 `;
-

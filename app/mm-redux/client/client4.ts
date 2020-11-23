@@ -3142,4 +3142,3 @@ export class ClientError extends Error {
         Object.defineProperty(this, 'message', {enumerable: true});
     }
 }
-

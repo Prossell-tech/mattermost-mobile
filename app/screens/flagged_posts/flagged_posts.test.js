@@ -97,4 +97,3 @@ describe('FlaggedPosts', () => {
         expect(showSearchModal).toHaveBeenCalledWith(`#${hashtag}`);
     });
 });
-

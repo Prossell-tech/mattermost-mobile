@@ -129,4 +129,3 @@ describe('PostOptions', () => {
         expect(wrapper.findWhere((node) => node.key() === 'reply')).toMatchObject({});
     });
 });
-

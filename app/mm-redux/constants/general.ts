@@ -71,4 +71,3 @@ export default {
     DEFAULT_OFF: 'default_off',
     REHYDRATED: 'app/REHYDRATED',
 };
-

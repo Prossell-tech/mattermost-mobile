@@ -50,4 +50,3 @@ const Avatar = ({avatarUri, theme}: AvatarProps) => {
 };
 
 export default Avatar;
-

@@ -54,4 +54,3 @@ function mapStateToProps(state: GlobalState, ownProps: FooterProps) {
 }
 
 export default connect(mapStateToProps)(Summary);
-

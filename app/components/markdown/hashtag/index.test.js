@@ -59,4 +59,3 @@ describe('Hashtag', () => {
         expect(props.onHashtagPress).toBeCalled();
     });
 });
-

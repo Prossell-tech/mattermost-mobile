@@ -399,4 +399,3 @@ export function submitInteractiveDialog(submission: DialogSubmission): ActionFun
         return {data};
     };
 }
-

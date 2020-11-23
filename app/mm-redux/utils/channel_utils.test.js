@@ -292,4 +292,3 @@ describe('ChannelUtils', () => {
         assert.equal(false, compareNotifyProps(baseProps, {...baseProps, ignore_channel_mentions: 'off'}));
     });
 });
-

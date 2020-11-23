@@ -119,4 +119,3 @@ exports[`AnnouncementBanner should match snapshot 2`] = `
   </ForwardRef>
 </ForwardRef(AnimatedComponentWrapper)>
 `;
-

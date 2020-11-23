@@ -68,4 +68,3 @@ describe('SelectedUsers', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
-

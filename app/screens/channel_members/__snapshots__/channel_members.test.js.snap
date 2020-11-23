@@ -100,4 +100,3 @@ exports[`ChannelMembers should match snapshot 1`] = `
   />
 </Connect(KeyboardLayout)>
 `;
-

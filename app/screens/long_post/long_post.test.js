@@ -30,4 +30,3 @@ describe('LongPost', () => {
         expect(wrapper.instance()).toMatchSnapshot();
     });
 });
-

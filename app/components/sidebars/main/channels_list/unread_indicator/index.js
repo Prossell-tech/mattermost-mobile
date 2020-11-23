@@ -3,4 +3,3 @@
 
 import UnreadIndicator from './unread_indicator';
 export default UnreadIndicator;
-

@@ -47,4 +47,3 @@ describe('ChannelPostList', () => {
         expect(instance.removeTypingAnimation).toHaveBeenCalledTimes(1);
     });
 });
-

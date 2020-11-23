@@ -36,4 +36,3 @@ export default {
     setShouldBlink: NotificationPreferences.setShouldBlink,
     play: NotificationPreferences.previewSound,
 };
-

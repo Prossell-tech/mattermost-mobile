@@ -146,4 +146,3 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default channelInfoRow;
-

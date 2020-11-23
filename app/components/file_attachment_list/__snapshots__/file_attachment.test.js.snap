@@ -65,4 +65,3 @@ exports[`FileAttachment should match snapshot 1`] = `
   />
 </TouchableWithFeedbackIOS>
 `;
-
