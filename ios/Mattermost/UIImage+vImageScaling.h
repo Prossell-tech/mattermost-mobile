@@ -14,4 +14,3 @@
 - (UIImage *)vImageScaledImageWithSize:(CGSize)destSize contentMode:(UIViewContentMode)contentMode;
 
 @end
-

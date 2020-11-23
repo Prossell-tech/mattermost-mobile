@@ -18,4 +18,3 @@ public class ShareActivity extends ReactActivity {
         app.sharedExtensionIsOpened = true;
     }
 }
-

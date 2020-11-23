@@ -78,4 +78,3 @@ RCT_EXPORT_METHOD(enabled:(BOOL) _enable) {
 }
 
 @end
-

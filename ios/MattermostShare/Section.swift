@@ -11,4 +11,3 @@ class Section: NSObject, NSCopying {
     return copy
   }
 }
-

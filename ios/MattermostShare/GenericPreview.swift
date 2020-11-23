@@ -23,4 +23,3 @@ class GenericPreview: UIView {
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
 }
-

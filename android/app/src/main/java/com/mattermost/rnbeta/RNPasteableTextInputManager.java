@@ -80,4 +80,3 @@ public class RNPasteableTextInputManager extends ReactTextInputManager {
         return map;
     }
 }
-

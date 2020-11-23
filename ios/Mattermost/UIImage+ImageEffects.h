@@ -110,4 +110,3 @@
 + (UIImage *)imageFromColor:(UIColor *)color withSize:(CGSize)size;
 
 @end
-

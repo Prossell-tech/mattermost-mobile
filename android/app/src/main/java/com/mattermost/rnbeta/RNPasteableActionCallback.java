@@ -95,4 +95,3 @@ public class RNPasteableActionCallback implements ActionMode.Callback {
         return item.getUri();
     }
 }
-

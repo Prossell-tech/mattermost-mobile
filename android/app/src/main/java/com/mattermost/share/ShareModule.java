@@ -261,4 +261,3 @@ public class ShareModule extends ReactContextBaseJavaModule {
         }
     }
 }
-
