@@ -276,3 +276,4 @@ export default class SettingsSidebarBase extends PureComponent {
         return; // eslint-disable-line no-useless-return
     }
 }
+

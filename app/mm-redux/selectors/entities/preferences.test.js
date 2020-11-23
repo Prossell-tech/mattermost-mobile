@@ -850,3 +850,4 @@ describe('shouldAutocloseDMs', () => {
         expect(Selectors.shouldAutocloseDMs(state)).toBe(false);
     });
 });
+

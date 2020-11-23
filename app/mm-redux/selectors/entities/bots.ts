@@ -6,3 +6,4 @@ import {GlobalState} from '@mm-redux/types/store';
 export function getBotAccounts(state: GlobalState) {
     return state.entities.bots.accounts;
 }
+

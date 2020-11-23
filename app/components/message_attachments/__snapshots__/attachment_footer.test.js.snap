@@ -107,3 +107,4 @@ exports[`AttachmentFooter it matches snapshot when the footer is longer than the
   </Text>
 </View>
 `;
+

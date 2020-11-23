@@ -115,3 +115,4 @@ describe('MainSidebarDrawerButton', () => {
         expect(wrapper.props().accessibilityLabel).toEqual('Channels and teams');
     });
 });
+

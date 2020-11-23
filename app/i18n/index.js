@@ -128,3 +128,4 @@ export function getLocalizedMessage(locale, id) {
 
     return translations[id];
 }
+

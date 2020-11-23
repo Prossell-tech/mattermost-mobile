@@ -105,3 +105,4 @@ export default class Emoji extends React.PureComponent {
         );
     }
 }
+

@@ -146,3 +146,4 @@ describe('PostBody', () => {
         expect(SystemMessageHelpers.renderSystemMessage.mock.calls.length).toBe(1);
     });
 });
+

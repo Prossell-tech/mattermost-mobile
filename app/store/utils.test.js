@@ -135,3 +135,4 @@ describe('Store serialzer', () => {
         expect(value).toEqual(initial);
     });
 });
+

@@ -6,3 +6,4 @@ declare module '@env' {
   export const STORYBOOK_HOST: string;
   export const STORYBOOK_PORT: number;
 }
+

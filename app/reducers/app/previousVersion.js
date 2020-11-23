@@ -4,3 +4,4 @@
 export default function previousVersion(state = '') {
     return state;
 }
+

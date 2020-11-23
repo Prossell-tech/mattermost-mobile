@@ -74,3 +74,4 @@ export type UserStatus = {
 	last_activity_at: number;
 	active_channel?: string;
 }
+

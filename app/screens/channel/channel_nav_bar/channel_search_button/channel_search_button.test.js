@@ -45,3 +45,4 @@ describe('ChannelSearchButton', () => {
         expect(wrapper.find(TouchableOpacity).first().props().accessibilityLabel).toEqual('Search');
     });
 });
+

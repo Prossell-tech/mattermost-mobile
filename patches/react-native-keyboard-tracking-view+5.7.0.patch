@@ -347,3 +347,4 @@ index 5e2c207..727017c 100644
    scrollToStart() {
      if (this.ref && KeyboardTrackingViewManager && KeyboardTrackingViewManager.scrollToStart) {
        KeyboardTrackingViewManager.scrollToStart(ReactNative.findNodeHandle(this.ref));
+

@@ -63,3 +63,4 @@ android_binary(
         ":app-code",
     ],
 )
+

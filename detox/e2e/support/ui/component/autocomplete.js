@@ -35,3 +35,4 @@ class Autocomplete {
 
 const autocomplete = new Autocomplete();
 export default autocomplete;
+

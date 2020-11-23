@@ -37,3 +37,4 @@ class MainSidebar {
 
 const mainSidebar = new MainSidebar();
 export default mainSidebar;
+

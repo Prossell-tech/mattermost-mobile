@@ -724,3 +724,4 @@ export default combineReducers({
     // object where every key is the channel id containing one or several object(s) with a mapping of <group_id: ChannelMemberCountByGroup>
     channelMemberCountsByGroup,
 });
+

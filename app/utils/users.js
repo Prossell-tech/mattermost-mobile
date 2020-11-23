@@ -21,3 +21,4 @@ export function isGuest(user) {
     }
     return false;
 }
+

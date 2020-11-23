@@ -23,3 +23,4 @@ describe('UploadRemove', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

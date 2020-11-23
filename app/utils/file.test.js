@@ -127,3 +127,4 @@ describe('getExtensionFromContentDisposition', () => {
         expect(localFile).toBe(`${DeviceTypes.DOCUMENTS_PATH}/${filename}-${hashCode(file.id)}.${file.extension}`);
     });
 });
+

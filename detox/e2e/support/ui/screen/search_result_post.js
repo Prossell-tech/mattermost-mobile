@@ -15,3 +15,4 @@ class SearchResultPostScreen {
 
 const searchResultPostScreen = new SearchResultPostScreen();
 export default searchResultPostScreen;
+

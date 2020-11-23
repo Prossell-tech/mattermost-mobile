@@ -159,3 +159,4 @@ const GalleryVideo = ({file, deviceHeight, deviceWidth, intl, isActive, onDouble
 };
 
 export default injectIntl(GalleryVideo);
+

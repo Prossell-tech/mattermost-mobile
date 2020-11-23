@@ -19,3 +19,4 @@ describe('SlideUpPanelIndicator', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

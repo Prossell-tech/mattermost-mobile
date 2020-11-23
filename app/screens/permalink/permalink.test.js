@@ -74,3 +74,4 @@ describe('Permalink', () => {
         expect(wrapper.instance().handleClose).toHaveBeenCalledTimes(1);
     });
 });
+

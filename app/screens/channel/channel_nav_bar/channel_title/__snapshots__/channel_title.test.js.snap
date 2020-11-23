@@ -236,3 +236,4 @@ exports[`ChannelTitle should match snapshot when isSelfDMChannel is true 1`] = `
   </View>
 </ForwardRef>
 `;
+

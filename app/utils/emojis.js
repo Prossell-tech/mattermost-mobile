@@ -44,3 +44,4 @@ export const getSystemEmojis = memoizeResult(() => {
 
     return emojis;
 });
+

@@ -23,3 +23,4 @@ class CameraQuickAction {
 
 const cameraQuickAction = new CameraQuickAction();
 export default cameraQuickAction;
+

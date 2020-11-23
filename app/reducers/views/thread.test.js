@@ -38,3 +38,4 @@ describe('Reducers.thread', () => {
         expect(handleSetTempUploadFilesForPostDraft(initialState, action)).toEqual(expectedState);
     });
 });
+

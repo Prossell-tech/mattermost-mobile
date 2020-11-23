@@ -88,3 +88,4 @@ export default class VectorIcon extends PureComponent {
         return null;
     }
 }
+

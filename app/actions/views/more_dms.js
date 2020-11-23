@@ -54,3 +54,4 @@ export function makeGroupChannel(otherUserIds) {
         return result;
     };
 }
+

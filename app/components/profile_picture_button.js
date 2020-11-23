@@ -78,3 +78,4 @@ export default class ProfilePictureButton extends PureComponent {
         );
     }
 }
+

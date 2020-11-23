@@ -18,3 +18,4 @@ function profileImageUri(state = '', action) {
 export default combineReducers({
     profileImageUri,
 });
+

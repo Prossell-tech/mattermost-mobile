@@ -38,3 +38,4 @@ describe('Theme', () => {
         expect(wrapper.find(ThemeTile)).toHaveLength(4);
     });
 });
+

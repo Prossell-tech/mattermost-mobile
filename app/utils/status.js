@@ -46,3 +46,4 @@ export function confirmOutOfOfficeDisabled(intl, status, updateStatus) {
         }],
     );
 }
+

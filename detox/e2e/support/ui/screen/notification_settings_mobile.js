@@ -64,3 +64,4 @@ class NotificationSettingsMobileScreen {
 
 const notificationSettingsMobileScreen = new NotificationSettingsMobileScreen();
 export default notificationSettingsMobileScreen;
+

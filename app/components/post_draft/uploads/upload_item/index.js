@@ -15,3 +15,4 @@ const mapDispatchToProps = {
 };
 
 export default connect(null, mapDispatchToProps)(UploadItem);
+

@@ -78,3 +78,4 @@ exports[`Badge should match snapshot 1`] = `
   </View>
 </View>
 `;
+

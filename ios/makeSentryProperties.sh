@@ -17,3 +17,4 @@ if [[ "${SENTRY_ENABLED}" = "true" ]]; then
 else
 	echo "Not creating sentry.properties because Sentry is disabled"
 fi
+

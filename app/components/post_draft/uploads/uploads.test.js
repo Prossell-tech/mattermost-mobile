@@ -60,3 +60,4 @@ describe('Uploads', () => {
         expect(instance.handleUploadDisabled).toHaveBeenCalled();
     });
 });
+

@@ -65,3 +65,4 @@ describe('Autocomplete', () => {
         await expect(dateSuggestion).toExist();
     });
 });
+

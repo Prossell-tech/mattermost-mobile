@@ -187,3 +187,4 @@ RCT_EXPORT_METHOD(supportsFaceId:(RCTPromiseResolveBlock)resolve
 }
 
 @end
+

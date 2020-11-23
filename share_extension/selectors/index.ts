@@ -79,3 +79,4 @@ export const getExtensionSortedDirectChannels = createSelector(
         return dms.concat(gms).sort(sortChannelsByDisplayName.bind(null, locale));
     },
 );
+

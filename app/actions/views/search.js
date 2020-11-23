@@ -9,3 +9,4 @@ export function handleSearchDraftChanged(text) {
         text,
     };
 }
+

@@ -26,3 +26,4 @@ public class RNPasteableTextInputPackage implements ReactPackage {
         );
     }
 }
+

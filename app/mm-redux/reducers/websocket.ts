@@ -29,3 +29,4 @@ export default function reducer(state = getInitialState(), action: GenericAction
 
     return state;
 }
+

@@ -22,3 +22,4 @@ function makeMapStateToProps() {
 }
 
 export default connect(makeMapStateToProps)(ChannelListRow);
+

@@ -60,7 +60,7 @@ private final ReactNativeHost mReactNativeHost =
   new ReactNativeHost(this) {
     @Override
     public boolean getUseDeveloperSupport() {
-      return BuildConfig.DEBUG;
+      return false;
     }
 
     @Override
@@ -258,3 +258,4 @@ private final ReactNativeHost mReactNativeHost =
     }
   }
 }
+

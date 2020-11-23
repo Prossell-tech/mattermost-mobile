@@ -64,3 +64,4 @@ export const getBadgeCount = createSelector(
         return badgeCount;
     },
 );
+

@@ -239,3 +239,4 @@ function drafts(state = {}, action) { // eslint-disable-line complexity
 export default combineReducers({
     drafts,
 });
+

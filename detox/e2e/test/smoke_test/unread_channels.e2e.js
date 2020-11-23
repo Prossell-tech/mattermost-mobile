@@ -66,3 +66,4 @@ describe('Unread channels', () => {
         await MainSidebar.getChannelByDisplayName(aChannel.display_name).tap();
     });
 });
+

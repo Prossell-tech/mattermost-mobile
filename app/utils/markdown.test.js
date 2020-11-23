@@ -76,3 +76,4 @@ describe('switchKeyboardForCodeBlocks for iOS 11', () => {
         Platform.Version = 12;
     });
 });
+

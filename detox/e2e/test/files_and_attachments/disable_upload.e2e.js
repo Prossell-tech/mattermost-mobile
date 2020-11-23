@@ -42,3 +42,4 @@ describe('Disable Upload', () => {
         await expect(imageQuickActionDisabled).toBeVisible();
     });
 });
+

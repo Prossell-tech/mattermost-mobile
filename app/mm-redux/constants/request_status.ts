@@ -12,3 +12,4 @@ const status: Dictionary<RequestStatusOption> = {
 };
 
 export default status;
+

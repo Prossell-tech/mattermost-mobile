@@ -56,3 +56,4 @@ class ChannelInfoScreen {
 
 const channelInfoScreen = new ChannelInfoScreen();
 export default channelInfoScreen;
+

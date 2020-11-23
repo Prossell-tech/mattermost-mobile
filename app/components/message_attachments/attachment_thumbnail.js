@@ -42,3 +42,4 @@ const style = StyleSheet.create({
         width: 45,
     },
 });
+

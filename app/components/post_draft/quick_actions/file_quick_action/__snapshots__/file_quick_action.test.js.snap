@@ -20,3 +20,4 @@ exports[`FileQuickAction should match snapshot 1`] = `
   />
 </TouchableWithFeedbackIOS>
 `;
+

@@ -106,3 +106,4 @@ if (fs.existsSync('dist')) {
 // Assumes dist/assets exists and is empty
 leftMergeDirs('assets/base/', 'assets/override/', 'dist/assets/', '');
 /* eslint-enable no-console */
+

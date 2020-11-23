@@ -79,3 +79,4 @@ describe('ChannelAddMembers', () => {
         expect(wrapper.state('loading')).toBe(false);
     });
 });
+

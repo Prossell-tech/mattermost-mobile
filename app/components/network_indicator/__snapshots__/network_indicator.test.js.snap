@@ -63,3 +63,4 @@ exports[`AttachmentFooter matches snapshot 1`] = `
   </ForwardRef(AnimatedComponentWrapper)>
 </ForwardRef(AnimatedComponentWrapper)>
 `;
+

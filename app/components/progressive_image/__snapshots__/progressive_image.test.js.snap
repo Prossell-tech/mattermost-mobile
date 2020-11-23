@@ -135,3 +135,4 @@ exports[`ProgressiveImage should match snapshot for Image 1`] = `
   />
 </ForwardRef(AnimatedComponentWrapper)>
 `;
+

@@ -72,3 +72,4 @@ index 0ee59c6..4a8294b 100644
    ? null
 -  : { playVideo: (videoId) => YouTubeStandalone.playVideo(videoId) };
 +  : { playVideo: (videoId, startTime) => YouTubeStandalone.playVideo(videoId, startTime) };
+

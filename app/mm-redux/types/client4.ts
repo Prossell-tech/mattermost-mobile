@@ -31,3 +31,4 @@ export type Options = {
     credentials?: 'omit' | 'same-origin' | 'include';
     body?: any;
 };
+

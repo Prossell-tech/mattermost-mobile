@@ -12,3 +12,4 @@ exports[`Hashtag should match snapshot 1`] = `
   #test
 </Text>
 `;
+

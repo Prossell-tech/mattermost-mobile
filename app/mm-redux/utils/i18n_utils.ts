@@ -12,3 +12,4 @@ export function localizeMessage(id: string, defaultMessage: string): string {
 
     return localizeFunction(id, defaultMessage);
 }
+

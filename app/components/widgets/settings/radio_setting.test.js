@@ -68,3 +68,4 @@ describe('components/widgets/settings/RadioSetting', () => {
         expect(wrapper.find(CompassIcon)).toHaveLength(0);
     });
 });
+

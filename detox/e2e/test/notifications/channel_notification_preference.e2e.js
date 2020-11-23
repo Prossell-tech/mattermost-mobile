@@ -140,3 +140,4 @@ describe('Channel Notification Preference', () => {
         await expect(element(by.id(ChannelInfoScreen.testID.notificationPreferenceAction).withDescendant(by.text('Never')))).toBeVisible();
     });
 });
+

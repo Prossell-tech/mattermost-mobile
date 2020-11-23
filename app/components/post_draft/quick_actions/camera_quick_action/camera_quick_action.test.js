@@ -114,3 +114,4 @@ describe('CameraButton', () => {
         expect(StatusBar.setHidden).toHaveBeenCalledWith(false);
     });
 });
+

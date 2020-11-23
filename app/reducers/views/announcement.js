@@ -11,3 +11,4 @@ export default function banner(state = '', action) {
         return state;
     }
 }
+

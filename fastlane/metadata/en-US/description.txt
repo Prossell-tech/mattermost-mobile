@@ -11,3 +11,4 @@ To use this app, you need a "Server URL" from a Mattermost server. To host your 
 Find the Terms of Service for this app here: http://www.mattermost.com/terms/
 
 This is a reference implementation of an open source Mattermost app available at: https://github.com/mattermost/mattermost-mobile
+

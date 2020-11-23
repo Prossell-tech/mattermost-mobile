@@ -3840,3 +3840,4 @@ test('Selectors.Channels.getChannelMemberCountsByGroup', () => {
     assert.deepEqual(Selectors.getChannelMemberCountsByGroup(state, undefined), {});
     assert.deepEqual(Selectors.getChannelMemberCountsByGroup(state, 'undefined'), {});
 });
+

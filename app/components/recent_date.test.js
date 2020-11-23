@@ -121,3 +121,4 @@ describe('isToday and isYesterday', () => {
         expect(isYesterday(date)).toBe(false);
     });
 });
+

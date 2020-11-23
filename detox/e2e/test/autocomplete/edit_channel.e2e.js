@@ -46,3 +46,4 @@ describe('Autocomplete', () => {
         await ChannelInfoScreen.close();
     });
 });
+

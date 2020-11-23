@@ -28,3 +28,4 @@ const GalleryImage = ({file, deviceHeight, deviceWidth, style}: GalleryItemProps
 };
 
 export default GalleryImage;
+

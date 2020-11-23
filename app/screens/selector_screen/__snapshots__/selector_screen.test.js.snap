@@ -642,3 +642,4 @@ exports[`SelectorScreen should match snapshot for users 2`] = `
   />
 </View>
 `;
+

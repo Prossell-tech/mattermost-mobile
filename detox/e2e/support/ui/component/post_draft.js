@@ -32,3 +32,4 @@ class PostDraft {
 
 const postDraft = new PostDraft();
 export default postDraft;
+

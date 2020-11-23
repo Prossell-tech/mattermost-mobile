@@ -4,3 +4,4 @@ module.exports = {
     "../app/components/**/*.stories.@(js|jsx|ts|tsx)"
   ],
 }
+

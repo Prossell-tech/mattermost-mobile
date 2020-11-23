@@ -21,3 +21,4 @@ export function getNearestPoint(pivotPoint, points, xAttr = 'x', yAttr = 'y') {
     }
     return nearestPoint;
 }
+

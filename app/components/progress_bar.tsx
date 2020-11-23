@@ -75,3 +75,4 @@ const ProgressBar = ({color, progress, style}: ProgressBarProps) => {
 };
 
 export default ProgressBar;
+

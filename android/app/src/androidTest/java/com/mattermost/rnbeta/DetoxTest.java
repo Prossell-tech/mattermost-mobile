@@ -26,3 +26,4 @@ public class DetoxTest {
         Detox.runTests(mActivityRule, idlePolicyConfig);
     }
 }
+

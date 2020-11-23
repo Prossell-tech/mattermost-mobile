@@ -2417,3 +2417,4 @@ describe('getExpandedLink', () => {
         assert.equal(Selectors.getExpandedLink(state, ''), undefined);
     });
 });
+

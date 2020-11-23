@@ -65,3 +65,4 @@ function makeMapStateToProps() {
 }
 
 export default connect(makeMapStateToProps)(PostHeader);
+

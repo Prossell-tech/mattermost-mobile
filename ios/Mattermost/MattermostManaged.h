@@ -15,3 +15,4 @@
 + (void)sendConfigChangedEvent;
 
 @end
+

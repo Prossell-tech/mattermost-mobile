@@ -65,3 +65,4 @@ RCT_EXPORT_METHOD(removePreference:(NSString *) key)
   [self.bucket removePreference:key];
 }
 @end
+

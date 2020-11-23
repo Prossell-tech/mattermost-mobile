@@ -54,3 +54,4 @@ class LoginScreen {
 
 const loginScreen = new LoginScreen();
 export default loginScreen;
+

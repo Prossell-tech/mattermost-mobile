@@ -25,3 +25,4 @@ export function getInitialPosition(deviceHeight, marginFromTop) {
 
     return adjustedInitialPosition;
 }
+

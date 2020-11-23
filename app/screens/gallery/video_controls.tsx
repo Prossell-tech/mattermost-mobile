@@ -219,3 +219,4 @@ const VideoControls = forwardRef<VideoControlsRef, VideoControlsProps>((props: V
 VideoControls.displayName = 'VideoControls';
 
 export default VideoControls;
+

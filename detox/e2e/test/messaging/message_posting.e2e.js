@@ -53,3 +53,4 @@ describe('Messaging', () => {
         await expect(element(by.text(message))).toBeVisible();
     });
 });
+

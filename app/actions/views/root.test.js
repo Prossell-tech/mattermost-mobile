@@ -21,3 +21,4 @@ describe('Actions.Views.Root', () => {
         expect(store.getActions()).toEqual([action]);
     });
 });
+

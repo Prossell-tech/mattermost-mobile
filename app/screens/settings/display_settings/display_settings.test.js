@@ -50,3 +50,4 @@ describe('DisplaySettings', () => {
         expect(wrapper.find(SettingsItem).length).toBe(4);
     });
 });
+

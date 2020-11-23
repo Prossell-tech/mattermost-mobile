@@ -39,3 +39,4 @@ describe('Actions.Views.Login', () => {
         expect(getLicenseConfig).toHaveBeenCalled();
     });
 });
+

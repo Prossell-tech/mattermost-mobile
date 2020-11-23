@@ -15,3 +15,4 @@ class PostListScreen {
 
 const postListScreen = new PostListScreen();
 export default postListScreen;
+

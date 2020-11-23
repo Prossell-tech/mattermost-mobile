@@ -143,3 +143,4 @@ describe('Actions.Jobs', () => {
         assert.ok(jobsByType.data_retention.length === 1);
     });
 });
+

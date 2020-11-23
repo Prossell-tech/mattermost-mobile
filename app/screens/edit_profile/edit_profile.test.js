@@ -71,3 +71,4 @@ describe('edit_profile', () => {
         expect(instance.emitCanUpdateAccount).toBeCalledWith(true);
     });
 });
+

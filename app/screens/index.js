@@ -217,3 +217,4 @@ export function registerScreens(reduxStore) {
     Navigation.registerComponent('Channel', () => withReduxProvider(channelScreen, false), () => channelScreen);
     Navigation.registerComponent('SelectServer', () => withReduxProvider(serverScreen, false), () => serverScreen);
 }
+

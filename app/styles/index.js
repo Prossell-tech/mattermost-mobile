@@ -113,3 +113,4 @@ export const GlobalStyles = StyleSheet.create({
         color: '#2389D7',
     },
 });
+

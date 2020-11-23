@@ -21,3 +21,4 @@ const NavigationTypes = keyMirror({
 NavigationTypes.CHANNEL_SCREEN = 'Channel';
 
 export default NavigationTypes;
+

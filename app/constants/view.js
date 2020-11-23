@@ -137,3 +137,4 @@ export default {
     SidebarSectionTypes,
     IOS_HORIZONTAL_LANDSCAPE: 44,
 };
+

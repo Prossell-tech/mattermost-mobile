@@ -45,3 +45,4 @@ export const getCustomEmojiIdsSortedByName: (state: GlobalState) => Array<string
         );
     },
 );
+

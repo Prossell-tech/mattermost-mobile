@@ -1980,3 +1980,4 @@ exports[`channel_info_header should match snapshot when public channel and hasGu
   </Text>
 </View>
 `;
+

@@ -11,3 +11,4 @@ export default {
     VISIBILITY_SCROLL_DOWN: 'down',
     VISIBILITY_SCROLL_UP: 'up',
 };
+

@@ -56,3 +56,4 @@ export default class EditChannel extends PureComponent<EditChannelProps> {
         );
     }
 }
+

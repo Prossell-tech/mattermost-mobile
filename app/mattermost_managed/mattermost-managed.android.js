@@ -85,3 +85,4 @@ export default {
     supportsFaceId: async () => false,
     quitApp: MattermostManaged.quitApp,
 };
+

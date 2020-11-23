@@ -50,3 +50,4 @@ describe('Actions.Views.Thread', () => {
         expect(store.getActions()).toEqual([action]);
     });
 });
+

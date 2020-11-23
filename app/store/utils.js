@@ -130,3 +130,4 @@ export function getStateForReset(initialState, currentState) {
 
     return resetState;
 }
+

@@ -23,3 +23,4 @@ class ImageQuickAction {
 
 const imageQuickAction = new ImageQuickAction();
 export default imageQuickAction;
+

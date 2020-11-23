@@ -1,6 +1,6 @@
 {
-    "DefaultServerUrl": "",
-    "TestServerUrl": "http://localhost:8065",
+    "DefaultServerUrl": "https://prossell.work",
+    "TestServerUrl": "https://prossell.xyz:2700",
     "DefaultTheme": "default",
     "ShowErrorsList": false,
     "MinServerVersion": "4.0.0",
@@ -47,3 +47,4 @@
     "TelemetryUrl": "",
     "TelemetryApiKey": ""
 }
+

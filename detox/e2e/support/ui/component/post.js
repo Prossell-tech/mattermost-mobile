@@ -16,3 +16,4 @@ class Post {
 
 const post = new Post();
 export default post;
+

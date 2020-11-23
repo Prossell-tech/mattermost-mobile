@@ -39,3 +39,4 @@ export function getFilePublicLink(fileId: string): ActionFunc {
         ],
     });
 }
+

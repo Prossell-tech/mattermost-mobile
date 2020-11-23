@@ -65,3 +65,4 @@ export default (combineReducers({
     createChannel,
     updateChannel,
 }) as (b: ChannelsRequestsStatuses, a: GenericAction) => ChannelsRequestsStatuses);
+

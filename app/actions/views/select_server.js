@@ -21,3 +21,4 @@ export function setServerUrl(serverUrl) {
 export default {
     handleServerUrlChanged,
 };
+

@@ -20,3 +20,4 @@ export function makeMapStateToProps() {
 
 // Note that this also passes through Post's mapStateToProps
 export default connect(makeMapStateToProps)(Post);
+

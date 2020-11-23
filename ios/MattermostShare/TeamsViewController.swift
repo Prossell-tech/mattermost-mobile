@@ -55,3 +55,4 @@ extension TeamsViewController: UITableViewDelegate {
     delegate?.selectedTeam(deck: teamDecks[indexPath.row])
   }
 }
+

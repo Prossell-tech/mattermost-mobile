@@ -12,3 +12,4 @@ index b3733bc..882f4de 100644
      timeout?: number;
      writeFailHandler?: (err: Error) => void;
    }
+

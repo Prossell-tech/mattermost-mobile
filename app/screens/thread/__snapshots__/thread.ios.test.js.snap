@@ -192,3 +192,4 @@ exports[`thread should match snapshot, render footer 3`] = `
   </View>
 </React.Fragment>
 `;
+

@@ -241,3 +241,4 @@ export default class SafeAreaIos extends PureComponent {
         );
     }
 }
+

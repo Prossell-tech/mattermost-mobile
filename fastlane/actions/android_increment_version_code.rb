@@ -65,7 +65,7 @@ module Fastlane
         else
           # Store the version name in the shared hash
           Actions.lane_context["VERSION_CODE"]=new_version_code
-          UI.success("☝️ Version code has been changed from #{version_code} to #{new_version_code}")
+          UI.success("☝︁EVersion code has been changed from #{version_code} to #{new_version_code}")
         end
 
         return new_version_code
@@ -114,3 +114,4 @@ end
 # rubocop:enable Style/CaseEquality
 # rubocop:enable Style/MultilineTernaryOperator
 # rubocop:enable Style/NestedTernaryOperator
+

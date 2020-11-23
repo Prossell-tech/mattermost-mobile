@@ -531,3 +531,4 @@ const style = StyleSheet.create({
         justifyContent: 'center',
     },
 });
+

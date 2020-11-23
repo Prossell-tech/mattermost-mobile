@@ -116,3 +116,4 @@ describe('channel_info_header', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

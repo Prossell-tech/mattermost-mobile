@@ -4,3 +4,4 @@ export default {
     TEAM_TYPE_OPEN: 'O',
     TEAM_TYPE_INVITE: 'I',
 };
+

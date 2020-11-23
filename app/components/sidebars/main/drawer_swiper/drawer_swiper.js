@@ -97,3 +97,4 @@ export default class DrawerSwiper extends Component {
         );
     }
 }
+

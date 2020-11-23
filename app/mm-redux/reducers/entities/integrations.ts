@@ -239,3 +239,4 @@ export default combineReducers({
     // object represents slash command autocomplete suggestions
     commandAutocompleteSuggestions,
 });
+

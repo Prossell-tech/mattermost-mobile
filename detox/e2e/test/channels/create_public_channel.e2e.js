@@ -95,3 +95,4 @@ async function attemptToTapButton(id) {
         await element(by.id(id)).tap();
     }
 }
+

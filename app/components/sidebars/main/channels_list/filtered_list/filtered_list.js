@@ -398,3 +398,4 @@ class FilteredList extends Component {
 }
 
 export default injectIntl(FilteredList);
+

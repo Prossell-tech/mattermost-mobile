@@ -7790,3 +7790,4 @@ index da256af..3eeb51f 100644
    followRedirect : bool,
    trusty : bool,
    wifiOnly : bool
+

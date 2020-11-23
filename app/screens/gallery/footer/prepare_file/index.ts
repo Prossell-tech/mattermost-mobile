@@ -18,3 +18,4 @@ function mapStateToProps(state: GlobalState) {
 }
 
 export default connect(mapStateToProps, null, null, {forwardRef: true})(PrepareFile);
+

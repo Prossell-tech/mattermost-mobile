@@ -202,3 +202,4 @@ describe('On boarding', () => {
         await ChannelScreen.toBeVisible();
     });
 });
+

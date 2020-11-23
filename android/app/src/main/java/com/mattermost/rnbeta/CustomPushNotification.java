@@ -565,3 +565,4 @@ public class CustomPushNotification extends PushNotification {
         notificationManager.createNotificationChannel(mMinImportanceChannel);
     }
 }
+

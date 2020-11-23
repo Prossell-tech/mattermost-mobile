@@ -52,3 +52,4 @@ exports[`Search RecentItem should match snapshot and respond to events 1`] = `
   </View>
 </ForwardRef>
 `;
+

@@ -68,3 +68,4 @@ describe('PinnedPosts', () => {
         expect(wrapper.state('isLoading')).toBe(true);
     });
 });
+

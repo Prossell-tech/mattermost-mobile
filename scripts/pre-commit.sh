@@ -30,3 +30,4 @@ fi
 scripts/precommit/i18n.sh
 
 exit 0
+

@@ -11,3 +11,4 @@ exports[`MainSidebar should match, full snapshot 1`] = `
   useNativeAnimations={true}
 />
 `;
+

@@ -53,3 +53,4 @@ export default {
     setDeviceAsTablet,
     setStatusBarHeight,
 };
+

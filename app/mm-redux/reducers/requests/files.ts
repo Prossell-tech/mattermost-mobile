@@ -67,3 +67,4 @@ function uploadFiles(state: RequestStatusType = initialRequestState(), action: G
 export default (combineReducers({
     uploadFiles,
 }) as (b: FilesRequestsStatuses, a: GenericAction) => FilesRequestsStatuses);
+

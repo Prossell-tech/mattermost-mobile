@@ -22,3 +22,4 @@ export type MarketplacePlugin = {
     };
     installed_version: string;
 }
+

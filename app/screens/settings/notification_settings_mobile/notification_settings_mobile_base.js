@@ -115,3 +115,4 @@ export default class NotificationSettingsMobileBase extends PureComponent {
         });
     };
 }
+

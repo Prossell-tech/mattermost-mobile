@@ -11,3 +11,4 @@
 @interface BlurAppScreen : NSObject <RCTBridgeModule>
 
 @end
+

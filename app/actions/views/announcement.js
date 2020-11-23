@@ -9,3 +9,4 @@ export function dismissBanner(text) {
         data: text,
     };
 }
+

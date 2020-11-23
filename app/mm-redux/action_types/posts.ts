@@ -53,3 +53,4 @@ export default keyMirror({
     MOVE_HISTORY_INDEX_BACK: null,
     MOVE_HISTORY_INDEX_FORWARD: null,
 });
+

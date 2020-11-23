@@ -15,3 +15,4 @@ export function preventDoubleTap(func, doublePressDelay = 300) {
         }
     };
 }
+

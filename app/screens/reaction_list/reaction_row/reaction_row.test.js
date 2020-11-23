@@ -24,3 +24,4 @@ describe('ReactionRow', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

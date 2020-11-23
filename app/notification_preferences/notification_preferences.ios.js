@@ -8,3 +8,4 @@ export default {
     setShouldBlink: () => null,
     play: () => null,
 };
+

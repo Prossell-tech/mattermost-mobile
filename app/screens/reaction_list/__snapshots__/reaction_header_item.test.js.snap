@@ -103,3 +103,4 @@ exports[`ReactionHeaderItem should match snapshot, renderContent 2`] = `
   </Text>
 </React.Fragment>
 `;
+

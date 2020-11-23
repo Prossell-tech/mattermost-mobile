@@ -32,3 +32,4 @@ class CreateChannelScreen {
 
 const createChannelScreen = new CreateChannelScreen();
 export default createChannelScreen;
+

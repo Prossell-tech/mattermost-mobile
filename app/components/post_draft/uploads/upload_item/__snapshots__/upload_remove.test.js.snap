@@ -35,3 +35,4 @@ exports[`UploadRemove should match, full snapshot 1`] = `
   </View>
 </TouchableWithFeedbackIOS>
 `;
+

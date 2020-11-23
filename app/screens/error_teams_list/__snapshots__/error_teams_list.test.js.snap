@@ -45,3 +45,4 @@ exports[`ErrorTeamsList should match snapshot 1`] = `
   />
 </View>
 `;
+

@@ -429,3 +429,4 @@ class GlobalEventHandler {
 }
 
 export default new GlobalEventHandler();
+

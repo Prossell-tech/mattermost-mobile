@@ -40,3 +40,4 @@ export default (combineReducers({
     flaggedPosts,
     pinnedPosts,
 }) as (b: SearchRequestsStatuses, a: GenericAction) => SearchRequestsStatuses);
+

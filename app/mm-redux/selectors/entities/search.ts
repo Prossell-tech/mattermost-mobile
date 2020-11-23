@@ -47,3 +47,4 @@ export function makeGetMentionKeysForPost(): (state: GlobalState, channel: Chann
         },
     );
 }
+

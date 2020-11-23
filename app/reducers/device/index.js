@@ -16,3 +16,4 @@ export default combineReducers({
     orientation,
     statusBarHeight,
 });
+

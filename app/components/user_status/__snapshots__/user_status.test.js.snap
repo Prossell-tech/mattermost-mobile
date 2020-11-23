@@ -47,3 +47,4 @@ exports[`UserStatus should match snapshot, should default to offline status 1`] 
   }
 />
 `;
+

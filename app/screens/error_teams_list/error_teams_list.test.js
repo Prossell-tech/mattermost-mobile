@@ -60,3 +60,4 @@ describe('ErrorTeamsList', () => {
         expect(selectDefaultTeam).toHaveBeenCalledTimes(1);
     });
 });
+

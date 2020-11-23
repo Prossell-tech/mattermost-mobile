@@ -10,3 +10,4 @@ export const CategoryTypes: {[name: string]: ChannelCategoryType} = {
     DIRECT_MESSAGES: 'direct_messages',
     CUSTOM: 'custom',
 };
+

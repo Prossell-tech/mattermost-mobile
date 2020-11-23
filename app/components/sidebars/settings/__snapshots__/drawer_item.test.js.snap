@@ -92,3 +92,4 @@ exports[`DrawerItem should match snapshot 1`] = `
   </View>
 </ForwardRef>
 `;
+

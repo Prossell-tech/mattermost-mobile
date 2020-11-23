@@ -77,3 +77,4 @@ describe('Recent Mentions', () => {
         await RecentMentionsScreen.close();
     });
 });
+

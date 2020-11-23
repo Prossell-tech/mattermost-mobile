@@ -14,3 +14,4 @@ export type Role = {
     scheme_managed: boolean;
     built_in: boolean;
 };
+

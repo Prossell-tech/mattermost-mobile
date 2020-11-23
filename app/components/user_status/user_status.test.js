@@ -56,3 +56,4 @@ describe('UserStatus', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

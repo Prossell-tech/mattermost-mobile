@@ -16,3 +16,4 @@ export default function clientUpgrade(state = initialState, action) {
         return state;
     }
 }
+

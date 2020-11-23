@@ -73,3 +73,4 @@ exports[`PinnedPosts should match snapshot when getPinnedPosts failed 1`] = `
   />
 </View>
 `;
+

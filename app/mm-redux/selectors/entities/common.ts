@@ -34,3 +34,4 @@ export function getCurrentUserId(state: GlobalState): string {
 export function getUsers(state: GlobalState): IDMappedObjects<UserProfile> {
     return state.entities.users.profiles;
 }
+

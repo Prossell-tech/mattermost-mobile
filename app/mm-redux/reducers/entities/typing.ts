@@ -58,3 +58,4 @@ export default function typing(state: Typing = {}, action: GenericAction): Typin
         return state;
     }
 }
+

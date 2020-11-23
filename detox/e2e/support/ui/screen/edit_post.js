@@ -45,3 +45,4 @@ class EditPostScreen {
 
 const editPostScreen = new EditPostScreen();
 export default editPostScreen;
+

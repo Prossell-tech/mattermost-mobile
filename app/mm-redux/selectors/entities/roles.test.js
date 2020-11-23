@@ -264,3 +264,4 @@ describe('Selectors.Roles', () => {
         assert.equal(Selectors.haveICurrentChannelPermission(testState, {permission: 'channel_b_role1'}), false);
     });
 });
+

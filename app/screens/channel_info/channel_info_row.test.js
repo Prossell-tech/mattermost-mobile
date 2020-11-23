@@ -34,3 +34,4 @@ describe('ChannelInfoRow', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

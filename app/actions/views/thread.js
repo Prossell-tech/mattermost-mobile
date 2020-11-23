@@ -24,3 +24,4 @@ export function handleCommentDraftSelectionChanged(rootId, cursorPosition) {
         cursorPosition,
     };
 }
+

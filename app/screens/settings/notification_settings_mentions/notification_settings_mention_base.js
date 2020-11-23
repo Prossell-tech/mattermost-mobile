@@ -121,3 +121,4 @@ export default class NotificationSettingsMentionsBase extends PureComponent {
         });
     };
 }
+

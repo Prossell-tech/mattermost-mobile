@@ -44,3 +44,4 @@ describe('Reactions', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

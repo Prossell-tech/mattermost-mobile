@@ -24,3 +24,4 @@ function makeMapStateToProps() {
 }
 
 export default connect(makeMapStateToProps)(ChannelDisplayName);
+

@@ -323,3 +323,4 @@ export function getExtensionFromContentDisposition(contentDisposition) {
 
     return null;
 }
+

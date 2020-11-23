@@ -104,3 +104,4 @@ export function getTeamDefaultChannel(teamId: string) {
         return redirectChannel;
     };
 }
+

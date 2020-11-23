@@ -15,3 +15,4 @@ class LongPostScreen {
 
 const longPostScreen = new LongPostScreen();
 export default longPostScreen;
+

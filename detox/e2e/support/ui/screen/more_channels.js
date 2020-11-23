@@ -28,3 +28,4 @@ class MoreChannelsScreen {
 
 const moreChannelsScreen = new MoreChannelsScreen();
 export default moreChannelsScreen;
+

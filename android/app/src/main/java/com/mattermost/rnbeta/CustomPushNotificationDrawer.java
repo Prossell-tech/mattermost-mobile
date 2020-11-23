@@ -31,9 +31,10 @@ public class CustomPushNotificationDrawer extends PushNotificationsDrawer {
     public void onNotificationOpened() {
     }
 
-    @Override
-    public void onCancelAllLocalNotifications() {
-        CustomPushNotification.clearAllNotifications(mContext);
-        cancelAllScheduledNotifications();
-    }
+//    @Override
+//    public void onCancelAllLocalNotifications() {
+//        CustomPushNotification.clearAllNotifications(mContext);
+//        cancelAllScheduledNotifications();
+//    }
 }
+

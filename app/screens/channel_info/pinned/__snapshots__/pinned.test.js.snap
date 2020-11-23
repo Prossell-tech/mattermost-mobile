@@ -42,3 +42,4 @@ exports[`ChannelInfo -> Pinned should match snapshot 1`] = `
   togglable={false}
 />
 `;
+

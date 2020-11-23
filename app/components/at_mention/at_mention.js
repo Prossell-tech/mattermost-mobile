@@ -224,3 +224,4 @@ export default class AtMention extends React.PureComponent {
         );
     }
 }
+

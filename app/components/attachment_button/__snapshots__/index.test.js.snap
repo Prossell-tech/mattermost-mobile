@@ -25,3 +25,4 @@ exports[`AttachmentButton should match snapshot 1`] = `
   />
 </TouchableWithFeedbackIOS>
 `;
+

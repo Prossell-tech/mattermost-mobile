@@ -307,3 +307,4 @@ exports[`ChannelInfo -> Leave should match snapshot for Leave Public Channel 1`]
   />
 </React.Fragment>
 `;
+

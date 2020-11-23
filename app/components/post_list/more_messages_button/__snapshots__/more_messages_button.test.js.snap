@@ -133,3 +133,4 @@ exports[`MoreMessagesButton should match snapshot 1`] = `
   </TouchableWithFeedbackIOS>
 </ForwardRef(AnimatedComponentWrapper)>
 `;
+

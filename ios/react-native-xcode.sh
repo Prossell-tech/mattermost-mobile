@@ -112,3 +112,4 @@ if [[ $DEV != true && ! -f "$BUNDLE_FILE" ]]; then
   echo "React Native, please report it here: https://github.com/facebook/react-native/issues"
   exit 2
 fi
+

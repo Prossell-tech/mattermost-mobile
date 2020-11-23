@@ -47,3 +47,4 @@ describe('ReactionHeader', () => {
         expect(onSelectReaction).toHaveBeenCalledTimes(1);
     });
 });
+

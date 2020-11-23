@@ -409,3 +409,4 @@ describe('Actions.Emojis', () => {
         assert.ok(state.entities.emojis.nonExistentEmoji.has(missingName));
     });
 });
+

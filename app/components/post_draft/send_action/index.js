@@ -75,3 +75,4 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default memo(SendButton);
+

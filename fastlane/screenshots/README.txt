@@ -5,3 +5,4 @@ screenshots, like Apple TV screenshots, should also be stored in a subdirectory 
 with language folders inside of it.
 
 The screenshots can be named whatever you want, but keep in mind they are sorted alphabetically.
+

@@ -27,3 +27,4 @@ describe('ErrorText', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

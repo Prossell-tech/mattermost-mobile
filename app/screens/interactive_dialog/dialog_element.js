@@ -173,3 +173,4 @@ export default class DialogElement extends PureComponent {
         return null;
     }
 }
+

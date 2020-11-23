@@ -61,3 +61,4 @@ export const getAutocompleteCommandsList = reselect.createSelector(
         }).sort((a, b) => a.display_name.localeCompare(b.display_name));
     },
 );
+

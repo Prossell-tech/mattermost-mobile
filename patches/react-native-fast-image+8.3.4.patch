@@ -76,3 +76,4 @@ index 0b1afd5..2226715 100644
  }
  interface FastImageStaticProperties {
      resizeMode: typeof resizeMode;
+

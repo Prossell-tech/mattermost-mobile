@@ -42,3 +42,4 @@ describe('Smoke Tests', () => {
         await ChannelScreen.toBeVisible();
     });
 });
+

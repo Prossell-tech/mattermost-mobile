@@ -225,3 +225,4 @@ export default class PostAddChannelMember extends React.PureComponent {
         );
     }
 }
+

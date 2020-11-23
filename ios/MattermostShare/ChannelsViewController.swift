@@ -173,3 +173,4 @@ extension UISearchBar {
     return nil
   }
 }
+

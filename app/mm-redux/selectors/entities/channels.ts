@@ -937,3 +937,4 @@ export function getChannelModerations(state: GlobalState, channelId: string): Ar
 export function getChannelMemberCountsByGroup(state: GlobalState, channelId: string): ChannelMemberCountsByGroup {
     return state.entities.channels.channelMemberCountsByGroup[channelId] || {};
 }
+

@@ -113,3 +113,4 @@ export function setThemeDefaults(theme: Theme): Theme {
 
     return theme;
 }
+

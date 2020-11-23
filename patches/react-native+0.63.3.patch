@@ -263,3 +263,4 @@ index 6441d93..4a0cd01 100644
          def libDir = "$buildDir/intermediates/transforms/"
          def vmSelectionAction = {
              fileTree(libDir).matching {
+

@@ -401,3 +401,4 @@ export function userTyping(state: GlobalState, channelId: string, parentPostId: 
         lastTimeTypingSent = t;
     }
 }
+

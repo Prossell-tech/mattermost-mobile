@@ -25,3 +25,4 @@
 -(BOOL)getCanUploadFiles;
 -(void)updateEntities:(NSString *)content;
 @end
+

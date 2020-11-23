@@ -545,3 +545,4 @@ describe('Actions.Websocket handleUserTypingEvent', () => {
         expect(actionTypes).toEqual(expectedActionsTypes);
     });
 });
+

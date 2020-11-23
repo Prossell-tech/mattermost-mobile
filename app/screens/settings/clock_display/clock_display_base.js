@@ -49,3 +49,4 @@ export default class ClockDisplayBase extends PureComponent {
         savePreferences(userId, [timePreference]);
     }
 }
+

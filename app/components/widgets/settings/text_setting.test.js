@@ -27,3 +27,4 @@ describe('components/widgets/settings/TextSetting', () => {
         expect(onChange).toHaveBeenCalledWith('string.id', 'somenewvalue');
     });
 });
+

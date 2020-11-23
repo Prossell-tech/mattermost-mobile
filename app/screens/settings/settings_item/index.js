@@ -153,3 +153,4 @@ export default class SettingsItem extends PureComponent {
         );
     }
 }
+

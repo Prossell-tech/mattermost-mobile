@@ -31,3 +31,4 @@ class SettingsSidebar {
 
 const settingsSidebar = new SettingsSidebar();
 export default settingsSidebar;
+

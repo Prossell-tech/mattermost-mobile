@@ -71,3 +71,4 @@ export default {
     supportsFaceId: MattermostManaged.supportsFaceId,
     quitApp: MattermostManaged.quitApp,
 };
+

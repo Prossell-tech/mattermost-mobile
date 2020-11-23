@@ -20,3 +20,4 @@ public class RNPasteableEditText extends ReactEditText {
         return mOnPasteListener;
     }
 }
+

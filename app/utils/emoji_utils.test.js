@@ -98,7 +98,7 @@ describe('hasEmojisOnly with unicode emojis', () => {
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'Unicode emoji',
-        message: '🤟',
+        message: '🤁E,
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'Unicode emojis',
@@ -110,23 +110,23 @@ describe('hasEmojisOnly with unicode emojis', () => {
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'Unicode emojis without whitespace in between',
-        message: '🙌🤟',
+        message: '🙌🤁E,
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'Unicode emojis with white spaces',
-        message: '  😣   😖  ',
+        message: '  😣   �E  ',
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'Unicode emojis with white spaces',
-        message: '  😣   🤟  ',
+        message: '  😣   🤁E ',
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: '4 unicode emojis',
-        message: '😣 😖 🙌 👏',
+        message: '😣 �E 🙌 👏',
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'Unicode emojis greater than max of 4',
-        message: '😣 😖 🙌 👏 💩',
+        message: '😣 �E 🙌 👏 💩',
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: false},
     }, {
         name: 'Unicode emoji',
@@ -138,7 +138,7 @@ describe('hasEmojisOnly with unicode emojis', () => {
         expected: {isEmojiOnly: false, shouldRenderJumboEmoji: false},
     }, {
         name: 'Mixed valid and invalid unicode emojis',
-        message: '😣 invalid 😖',
+        message: '😣 invalid �E',
         expected: {isEmojiOnly: false, shouldRenderJumboEmoji: false},
     }];
 
@@ -224,7 +224,7 @@ describe('hasEmojisOnly with empty and mixed emojis', () => {
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'with unicode emoji and emoticon',
-        message: '🤟 :)',
+        message: '🤁E:)',
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'with named and unicode emojis',
@@ -232,7 +232,7 @@ describe('hasEmojisOnly with empty and mixed emojis', () => {
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'with named and unicode emojis',
-        message: ':smile: 🤟',
+        message: ':smile: 🤁E,
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'with named & unicode emojis and emoticon',
@@ -240,7 +240,7 @@ describe('hasEmojisOnly with empty and mixed emojis', () => {
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'with named & unicode emojis and emoticon',
-        message: ':smile: 🤟 :)',
+        message: ':smile: 🤁E:)',
         expected: {isEmojiOnly: true, shouldRenderJumboEmoji: true},
     }, {
         name: 'with 4 named & unicode emojis and emoticon',
@@ -439,3 +439,4 @@ describe('compareEmojis', () => {
         expect(emojiArray).toEqual([pointDownEmoji, disappointedEmoji, sixPointedStarEmoji, footPrintsEmoji, paintBrushEmoji, printerEmoji]);
     });
 });
+

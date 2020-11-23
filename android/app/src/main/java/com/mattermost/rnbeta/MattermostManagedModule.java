@@ -221,3 +221,4 @@ public class MattermostManagedModule extends ReactContextBaseJavaModule implemen
         return true;
     }
 }
+

@@ -43,3 +43,4 @@ class SearchScreen {
 
 const searchScreen = new SearchScreen();
 export default searchScreen;
+

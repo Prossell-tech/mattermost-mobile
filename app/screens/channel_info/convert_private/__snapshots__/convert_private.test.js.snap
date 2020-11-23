@@ -74,3 +74,4 @@ exports[`ChannelInfo -> ConvertPrivate should match snapshot for Convert to Priv
   />
 </React.Fragment>
 `;
+

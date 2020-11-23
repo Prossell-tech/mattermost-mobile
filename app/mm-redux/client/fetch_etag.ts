@@ -36,3 +36,4 @@ export default ((url?: string, options: Options = {headers: {}}) => {
     // all other requests go straight to fetch
     return Reflect.apply(fetch, undefined, [url, options]);
 });
+

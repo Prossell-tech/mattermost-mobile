@@ -261,3 +261,4 @@ export default function configureStore(storage: any, preloadedState: any = {}, o
 
     return {store, persistor};
 }
+

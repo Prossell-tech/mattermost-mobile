@@ -36,3 +36,4 @@ exports[`Swiper should match snapshot 1`] = `
   />
 </View>
 `;
+

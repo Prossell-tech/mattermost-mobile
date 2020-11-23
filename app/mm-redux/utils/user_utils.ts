@@ -171,3 +171,4 @@ export function sortByUsername(a: UserProfile, b: UserProfile): number {
 
     return nameA.localeCompare(nameB);
 }
+

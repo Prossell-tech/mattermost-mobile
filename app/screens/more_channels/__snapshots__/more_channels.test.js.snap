@@ -157,3 +157,4 @@ exports[`MoreChannels should match snapshot 1`] = `
   </React.Fragment>
 </Connect(KeyboardLayout)>
 `;
+

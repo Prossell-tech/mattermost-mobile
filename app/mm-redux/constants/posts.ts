@@ -67,3 +67,4 @@ export default {
         PostTypes.REMOVE_FROM_TEAM,
     ],
 };
+

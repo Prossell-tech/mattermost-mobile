@@ -35,3 +35,4 @@ class EditChannelScreen {
 
 const editChannelScreen = new EditChannelScreen();
 export default editChannelScreen;
+

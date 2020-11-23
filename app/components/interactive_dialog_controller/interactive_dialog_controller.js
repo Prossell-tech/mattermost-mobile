@@ -102,3 +102,4 @@ export default class InteractiveDialogController extends PureComponent {
         return null;
     }
 }
+

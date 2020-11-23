@@ -46,3 +46,4 @@ export const getUsersTyping: (state: GlobalState) => Array<string> = createSelec
     (state) => state.entities.typing,
     getUsersTypingImpl,
 );
+

@@ -42,3 +42,4 @@ describe('OptionModalList', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

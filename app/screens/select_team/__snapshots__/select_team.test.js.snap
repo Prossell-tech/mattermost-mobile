@@ -178,3 +178,4 @@ exports[`SelectTeam should match snapshot when user is a guest 1`] = `
   </View>
 </View>
 `;
+

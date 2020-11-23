@@ -70,3 +70,4 @@ describe('ClientError', () => {
         assert.strictEqual(copy.url, error.url);
     });
 });
+

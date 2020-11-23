@@ -410,3 +410,4 @@ const filterSearchData = memoizeResult((dataSource, data, term) => {
 
     return data.filter((option) => option.text && option.text.toLowerCase().startsWith(lowerCasedTerm));
 });
+

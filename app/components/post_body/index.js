@@ -118,3 +118,4 @@ export function makeMapStateToProps() {
 }
 
 export default connect(makeMapStateToProps, null, null, {forwardRef: true})(PostBody);
+

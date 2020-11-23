@@ -272,7 +272,7 @@ export default class EditChannelInfo extends PureComponent {
                                             style={style.input}
                                             autoCapitalize='none'
                                             autoCorrect={false}
-                                            placeholder={{id: t('channel_modal.nameEx'), defaultMessage: 'E.g.: "Bugs", "Marketing", "客户支持"'}}
+                                            placeholder={{id: t('channel_modal.nameEx'), defaultMessage: 'E.g.: "Bugs", "Marketing", "客户支持E'}}
                                             placeholderTextColor={changeOpacity(theme.centerChannelColor, 0.5)}
                                             underlineColorAndroid='transparent'
                                             disableFullscreenUI={true}
@@ -451,3 +451,4 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
         },
     };
 });
+

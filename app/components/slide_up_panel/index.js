@@ -15,3 +15,4 @@ function mapStateToProps(state, ownProps) {
 }
 
 export default connect(mapStateToProps, null, null, {forwardRef: true})(SlideUpPanel);
+

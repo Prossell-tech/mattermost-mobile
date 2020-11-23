@@ -496,3 +496,4 @@ describe('@actions/navigation', () => {
         expect(EventEmitter.emit).toHaveBeenCalledWith(NavigationTypes.NAVIGATION_DISMISS_AND_POP_TO_ROOT);
     });
 });
+

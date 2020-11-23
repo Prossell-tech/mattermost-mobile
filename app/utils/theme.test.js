@@ -34,3 +34,4 @@ describe('getKeyboardAppearanceFromTheme', () => {
         expect(keyboardAppearance).toBe('dark');
     });
 });
+

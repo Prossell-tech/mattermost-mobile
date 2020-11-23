@@ -102,3 +102,4 @@ export function hexToHue(hexColor) {
 
     return hue;
 }
+

@@ -286,3 +286,4 @@ exports[`MarkdownTable should match snapshot 1`] = `
   />
 </TouchableWithFeedbackIOS>
 `;
+

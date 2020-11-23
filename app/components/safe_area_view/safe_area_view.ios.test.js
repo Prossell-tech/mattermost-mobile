@@ -303,3 +303,4 @@ describe('SafeAreaIos', () => {
         expect(removeEventListener).toHaveBeenCalledWith('safeAreaInsetsForRootViewDidChange', instance.onSafeAreaInsetsForRootViewChange);
     });
 });
+

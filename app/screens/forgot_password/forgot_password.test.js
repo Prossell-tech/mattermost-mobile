@@ -74,3 +74,4 @@ describe('ForgotPassword', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

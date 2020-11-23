@@ -79,3 +79,4 @@ describe('Typing', () => {
         expect(instance.removeTypingAnimation).toHaveBeenCalledTimes(1);
     });
 });
+

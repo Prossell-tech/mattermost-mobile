@@ -92,3 +92,4 @@ export const Team = {
 };
 
 export default Team;
+

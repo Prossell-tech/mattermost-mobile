@@ -17,3 +17,4 @@ Host your own server: https://about.mattermost.com/download
 Terms of Service: http://about.mattermost.com/terms/ 
 
 Contribute to the project: https://github.com/mattermost/mattermost-mobile
+

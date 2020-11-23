@@ -20,3 +20,4 @@ exports[`CameraButton should match snapshot 1`] = `
   />
 </TouchableWithFeedbackIOS>
 `;
+

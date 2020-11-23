@@ -89,3 +89,4 @@ export default class EmojiPicker extends EmojiPickerBase {
         );
     }
 }
+

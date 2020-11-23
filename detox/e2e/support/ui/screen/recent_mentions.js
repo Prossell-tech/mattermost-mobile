@@ -50,3 +50,4 @@ class RecentMentionsScreen {
 
 const recentMentionsScreen = new RecentMentionsScreen();
 export default recentMentionsScreen;
+

@@ -129,3 +129,4 @@ export const selectEmojisBySection = createSelector(
         return emoticons;
     },
 );
+

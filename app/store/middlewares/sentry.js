@@ -40,3 +40,4 @@ function makeBreadcrumbFromAction(action) {
 
     return breadcrumb;
 }
+

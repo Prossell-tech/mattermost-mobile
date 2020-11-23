@@ -74,3 +74,4 @@ describe('Autocomplete', () => {
         await expect(slashSuggestionList).toExist();
     });
 });
+

@@ -18,3 +18,4 @@ describe('Actions.Views.CreateChannel', () => {
         });
     });
 });
+

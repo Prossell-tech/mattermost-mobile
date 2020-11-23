@@ -16,3 +16,4 @@ export function collapseCategory(categoryId: string) {
         data: categoryId,
     };
 }
+

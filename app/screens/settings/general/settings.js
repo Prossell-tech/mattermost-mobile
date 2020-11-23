@@ -337,3 +337,4 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default injectIntl(Settings);
+

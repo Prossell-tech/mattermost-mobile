@@ -87,3 +87,4 @@ export default class NotificationPreference extends PureComponent<NotificationPr
         );
     }
 }
+

@@ -23,3 +23,4 @@ class FileQuickAction {
 
 const fileQuickAction = new FileQuickAction();
 export default fileQuickAction;
+

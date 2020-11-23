@@ -161,3 +161,4 @@ describe('MoreChannels', () => {
         expect(instance.nextArchived).toBe(false);
     });
 });
+

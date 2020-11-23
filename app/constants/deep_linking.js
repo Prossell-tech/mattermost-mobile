@@ -6,3 +6,4 @@ export default {
     PERMALINK: 'permalink',
     OTHER: 'other',
 };
+

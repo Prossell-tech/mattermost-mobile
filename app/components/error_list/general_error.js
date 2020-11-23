@@ -71,3 +71,4 @@ GeneralError.propTypes = {
 };
 
 export default GeneralError;
+

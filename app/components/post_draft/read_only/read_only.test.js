@@ -19,3 +19,4 @@ describe('PostDraft ReadOnly', () => {
         expect(wrapper).toMatchSnapshot();
     });
 });
+

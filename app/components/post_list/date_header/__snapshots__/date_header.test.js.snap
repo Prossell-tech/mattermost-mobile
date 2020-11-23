@@ -167,3 +167,4 @@ exports[`DateHeader component should match snapshot without suffix 1`] = `
   />
 </View>
 `;
+

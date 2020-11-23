@@ -20,3 +20,4 @@ export function isLandscape(state) {
 export function isTablet(state) {
     return state.device.isTablet;
 }
+

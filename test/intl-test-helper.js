@@ -31,3 +31,4 @@ export function mountWithIntl(node, {context, childContextTypes} = {}) {
         childContextTypes: Object.assign({}, {intl: intlShape}, childContextTypes),
     });
 }
+

@@ -23,3 +23,4 @@ class SendButton {
 
 const sendButton = new SendButton();
 export default sendButton;
+

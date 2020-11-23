@@ -21,3 +21,4 @@ export type JobsState = {
     jobs: IDMappedObjects<Job>;
     jobsByTypeList: JobsByType;
 };
+

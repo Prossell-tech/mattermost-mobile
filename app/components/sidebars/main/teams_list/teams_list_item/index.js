@@ -28,3 +28,4 @@ function makeMapStateToProps() {
 }
 
 export default connect(makeMapStateToProps)(TeamsListItem);
+

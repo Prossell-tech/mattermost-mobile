@@ -17,3 +17,4 @@ export default class RefreshList extends PureComponent {
         );
     }
 }
+

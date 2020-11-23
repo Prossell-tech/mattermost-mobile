@@ -86,3 +86,4 @@ function areStatesEqual(next, prev) {
 }
 
 export default connect(mapStateToProps, null, null, {pure: true, areStatesEqual})(List);
+

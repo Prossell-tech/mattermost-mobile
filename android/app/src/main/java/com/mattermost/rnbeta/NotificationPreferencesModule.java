@@ -134,3 +134,4 @@ public class NotificationPreferencesModule extends ReactContextBaseJavaModule {
         CustomPushNotification.clearNotification(context, identifier, channelId);
     }
 }
+

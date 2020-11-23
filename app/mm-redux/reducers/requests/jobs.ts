@@ -54,3 +54,4 @@ export default (combineReducers({
     getJobs,
     cancelJob,
 }) as (b: JobsRequestsStatuses, a: GenericAction) => JobsRequestsStatuses);
+

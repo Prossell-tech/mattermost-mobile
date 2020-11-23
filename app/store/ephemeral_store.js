@@ -81,3 +81,4 @@ class EphemeralStore {
 }
 
 export default new EphemeralStore();
+

@@ -6,3 +6,4 @@ import {GlobalState} from '@mm-redux/types/store';
 export function getDisplayableErrors(state: GlobalState) {
     return state.errors.filter((error) => error.displayable);
 }
+

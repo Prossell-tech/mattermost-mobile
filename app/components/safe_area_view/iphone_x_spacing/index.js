@@ -18,3 +18,4 @@ export const paddingRight = (isLandscape, modifier = 0) => {
 export const marginHorizontal = (isLandscape, modifier = 0) => {
     return DeviceTypes.IS_IPHONE_WITH_INSETS && isLandscape ? {marginHorizontal: ViewTypes.IOS_HORIZONTAL_LANDSCAPE + modifier} : null;
 };
+

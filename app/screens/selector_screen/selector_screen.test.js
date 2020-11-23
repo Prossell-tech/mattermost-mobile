@@ -125,3 +125,4 @@ describe('SelectorScreen', () => {
         expect(wrapper.getElement()).toMatchSnapshot();
     });
 });
+

@@ -88,3 +88,4 @@ describe('CustomList', () => {
         expect(wrapper.instance().renderFooter()).toMatchSnapshot();
     });
 });
+

@@ -33,3 +33,4 @@ export function isUpgradeAvailable(upgradeType) {
         UpgradeTypes.MUST_UPGRADE,
     ].includes(upgradeType);
 }
+

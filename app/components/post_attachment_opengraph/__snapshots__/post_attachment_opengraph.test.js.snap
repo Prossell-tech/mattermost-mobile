@@ -298,3 +298,4 @@ exports[`PostAttachmentOpenGraph should match state and snapshot, on renderImage
   </TouchableWithFeedbackIOS>
 </View>
 `;
+

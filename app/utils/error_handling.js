@@ -72,3 +72,4 @@ class JavascriptAndNativeErrorHandler {
 }
 
 export default new JavascriptAndNativeErrorHandler();
+

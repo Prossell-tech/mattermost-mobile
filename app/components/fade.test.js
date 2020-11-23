@@ -58,3 +58,4 @@ describe('Fade', () => {
         expect(wrapper).toHaveStyle('opacity', new Animated.Value(1));
     });
 });
+

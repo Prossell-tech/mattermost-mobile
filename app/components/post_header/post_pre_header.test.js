@@ -151,3 +151,4 @@ describe('PostPreHeader', () => {
         expect(wrapper.type()).toBeNull();
     });
 });
+

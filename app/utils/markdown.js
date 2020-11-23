@@ -205,3 +205,4 @@ export function switchKeyboardForCodeBlocks(value, cursorPosition) {
 
     return 'default';
 }
+

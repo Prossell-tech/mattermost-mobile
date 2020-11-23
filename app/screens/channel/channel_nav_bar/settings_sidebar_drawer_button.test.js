@@ -42,3 +42,4 @@ describe('SettingsSidebarDrawerButton', () => {
         expect(wrapper.props().accessibilityLabel).toEqual('More Options');
     });
 });
+

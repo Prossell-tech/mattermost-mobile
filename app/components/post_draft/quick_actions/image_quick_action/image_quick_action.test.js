@@ -114,3 +114,4 @@ describe('ImageQuickAction', () => {
         expect(StatusBar.setHidden).toHaveBeenCalledWith(false);
     });
 });
+

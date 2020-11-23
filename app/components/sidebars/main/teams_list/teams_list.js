@@ -224,3 +224,4 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
         },
     };
 });
+

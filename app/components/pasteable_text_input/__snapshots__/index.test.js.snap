@@ -10,3 +10,4 @@ exports[`PasteableTextInput should render pasteable text input 1`] = `
   My Text
 </Component>
 `;
+

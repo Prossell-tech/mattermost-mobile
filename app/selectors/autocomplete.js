@@ -305,3 +305,4 @@ export const makeGetMatchTermForDateMention = () => {
         return lastMatchTerm;
     };
 };
+

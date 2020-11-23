@@ -288,3 +288,4 @@ const getStyleFromTheme = makeStyleSheetFromTheme((theme) => {
         },
     };
 });
+

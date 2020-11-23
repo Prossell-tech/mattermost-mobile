@@ -53,3 +53,4 @@ describe('Select channel', () => {
         await expect(channelNavBarTitle).toHaveText(newChannel.display_name);
     });
 });
+

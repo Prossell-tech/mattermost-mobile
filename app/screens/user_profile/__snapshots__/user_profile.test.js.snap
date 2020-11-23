@@ -236,3 +236,4 @@ exports[`user_profile should match snapshot 1`] = `
   </ScrollView>
 </View>
 `;
+

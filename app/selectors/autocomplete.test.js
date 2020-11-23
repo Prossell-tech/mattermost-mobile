@@ -214,3 +214,4 @@ describe('Selectors.Autocomplete', () => {
         expect(profiles.length).toBe(3);
     });
 });
+

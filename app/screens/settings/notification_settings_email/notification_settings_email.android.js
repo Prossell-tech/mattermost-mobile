@@ -320,3 +320,4 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default NotificationSettingsEmailAndroid;
+

@@ -241,3 +241,4 @@ export function getEmbedFromMetadata(metadata: PostMetadata): PostEmbed | null {
 
     return metadata.embeds[0];
 }
+

@@ -46,3 +46,4 @@ describe('Prevent double tap', () => {
         }, 300);
     });
 });
+

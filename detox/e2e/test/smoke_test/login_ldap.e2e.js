@@ -72,3 +72,4 @@ async function ensureUserHasTeam(ldapUser) {
         await Team.apiAddUserToTeam(user.id, team.id);
     }
 }
+

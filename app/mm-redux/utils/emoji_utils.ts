@@ -54,3 +54,4 @@ export function parseNeededCustomEmojisFromText(text: string, systemEmojis: Set<
 
     return customEmojis;
 }
+

@@ -107,3 +107,4 @@ describe('ChannelBase', () => {
         expect(alert).toHaveBeenCalled();
     });
 });
+

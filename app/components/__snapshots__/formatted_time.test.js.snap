@@ -32,7 +32,7 @@ exports[`FormattedTime should support localization 1`] = `
 
 exports[`FormattedTime should support localization 2`] = `
 <Text>
-  Ïò§ÌõÑ 7:02
+  ÅE§˙∑ÅE7:02
 </Text>
 `;
 
@@ -41,3 +41,4 @@ exports[`FormattedTime should support localization 3`] = `
   19:02
 </Text>
 `;
+

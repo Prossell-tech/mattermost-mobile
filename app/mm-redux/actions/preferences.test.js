@@ -321,3 +321,4 @@ describe('Actions.Preferences', () => {
         assert.equal(myPreferences['theme--'].value, JSON.stringify(theme));
     });
 });
+

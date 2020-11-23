@@ -54,3 +54,4 @@ export default class Fade extends PureComponent {
         );
     }
 }
+

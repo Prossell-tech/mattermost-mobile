@@ -402,7 +402,7 @@
   "mobile.recent_mentions.empty_title": "Nessuna Citazione Recente",
   "mobile.rename_channel.display_name_maxLength": "Il nome del canale deve essere al massimo di {maxLength, number} caratteri",
   "mobile.rename_channel.display_name_minLength": "Il nome del canale deve essere lungo almeno {minLength, number} caratteri",
-  "mobile.rename_channel.display_name_required": "È richiesto il nome del canale",
+  "mobile.rename_channel.display_name_required": "ÁErichiesto il nome del canale",
   "mobile.rename_channel.name_lowercase": "L'URL deve essere composto da caratteri alfanumerici minuscoli",
   "mobile.rename_channel.name_maxLength": "L'URL deve essere al massimo di {maxLength, number} caratteri",
   "mobile.rename_channel.name_minLength": "L'URL deve essere lungo almeno {minLength, number} caratteri",
@@ -630,3 +630,4 @@
   "user.settings.push_notification.online": "Online, lontano o offline",
   "web.root.signup_info": "Tutte le tue comunicazioni in un posto, instantaneamente ricercabili e accessibili ovunque"
 }
+

@@ -59,3 +59,4 @@ class EventEmitter {
 }
 
 export default new EventEmitter();
+

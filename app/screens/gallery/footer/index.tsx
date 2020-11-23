@@ -165,3 +165,4 @@ const Footer = forwardRef<FooterRef, FooterProps>((props: FooterProps, ref) => {
 Footer.displayName = 'Footer';
 
 export default injectIntl(Footer, {withRef: true});
+

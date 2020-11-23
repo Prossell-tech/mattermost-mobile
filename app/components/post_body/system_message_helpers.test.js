@@ -138,3 +138,4 @@ describe('renderSystemMessage', () => {
         expect(renderedMessage).toBeNull();
     });
 });
+

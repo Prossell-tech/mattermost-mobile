@@ -24,3 +24,4 @@ public class NotificationDismissService extends IntentService {
         Log.i("ReactNative", "Dismiss notification");
     }
 }
+

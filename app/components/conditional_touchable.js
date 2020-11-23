@@ -27,3 +27,4 @@ export default class ConditionalTouchable extends React.PureComponent {
         return React.Children.only(children);
     }
 }
+

@@ -221,3 +221,4 @@ exports[`Theme should match snapshot 1`] = `
   </View>
 </View>
 `;
+

@@ -15,3 +15,4 @@ index a8e9b0c..2fac079 100644
        // Devices larger than handset and in a sane range for tablets are tablets.
        return DeviceType.TABLET;
      } else {
+

@@ -99,3 +99,4 @@ describe('channelInfo', () => {
         expect(wrapper.find(NotificationPreference).exists()).toEqual(false);
     });
 });
+

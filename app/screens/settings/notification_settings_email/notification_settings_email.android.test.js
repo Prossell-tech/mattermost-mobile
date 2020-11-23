@@ -162,3 +162,4 @@ describe('NotificationSettingsEmailAndroid', () => {
         expect(instance.saveEmailNotifyProps).toHaveBeenCalledTimes(0);
     });
 });
+

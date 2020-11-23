@@ -42,3 +42,4 @@ export default function keyMirror<T extends {}>(obj: T): { [K in keyof T]: K } {
     }
     return ret;
 }
+

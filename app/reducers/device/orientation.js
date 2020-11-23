@@ -12,3 +12,4 @@ export default function orientation(state = 'PORTRAIT', action) {
     return state;
 }
 
+

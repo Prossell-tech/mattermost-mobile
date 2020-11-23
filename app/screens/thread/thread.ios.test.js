@@ -94,3 +94,4 @@ describe('thread', () => {
         expect(EventEmitter.off).toHaveBeenCalledWith(TYPING_VISIBLE, instance.runTypingAnimations);
     });
 });
+

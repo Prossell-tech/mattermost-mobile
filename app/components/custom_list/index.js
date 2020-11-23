@@ -296,3 +296,4 @@ const getStyleFromTheme = makeStyleSheetFromTheme((theme) => {
         },
     };
 });
+

@@ -642,3 +642,4 @@ export const makeIsPostCommentMention = (): ((b: GlobalState, a: $ID<Post>) => b
 export function getExpandedLink(state: GlobalState, link: string): string {
     return state.entities.posts.expandedURLs[link];
 }
+

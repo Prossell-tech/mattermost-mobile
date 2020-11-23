@@ -116,3 +116,4 @@ describe('SelectTeam', () => {
         expect(props.actions.addUserToTeam).toBeCalledWith('test_id', 'fakeid');
     });
 });
+

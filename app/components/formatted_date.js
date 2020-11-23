@@ -33,3 +33,4 @@ export default class FormattedDate extends React.PureComponent {
         return <Text {...props}>{formattedDate}</Text>;
     }
 }
+

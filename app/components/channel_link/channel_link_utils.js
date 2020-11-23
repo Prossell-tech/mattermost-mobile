@@ -19,3 +19,4 @@ export function getChannelFromChannelName(name, channelsByName) {
 
     return null;
 }
+

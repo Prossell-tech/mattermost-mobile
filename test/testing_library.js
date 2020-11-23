@@ -38,3 +38,4 @@ export function renderWithReduxIntl(component, store = defaultStore, locale = 'e
         </Provider>,
     );
 }
+

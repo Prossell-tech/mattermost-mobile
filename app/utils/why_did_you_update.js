@@ -47,3 +47,4 @@ function whyDidYouUpdate(theClass, prevProps, prevState) {
 }
 
 export default whyDidYouUpdate;
+

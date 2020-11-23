@@ -26,3 +26,4 @@ export function isChannelFavorite(myPreferences: PreferencesType, channelId: str
 
     return Boolean(preference && preference.value !== 'false');
 }
+

@@ -125,3 +125,4 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
 });
 
 export default ThemeTile;
+

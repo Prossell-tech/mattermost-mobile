@@ -55,3 +55,4 @@ function makeMapStateToProps() {
 }
 
 export default connect(makeMapStateToProps)(ChannelIntro);
+

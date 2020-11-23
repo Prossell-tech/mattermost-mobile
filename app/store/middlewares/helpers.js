@@ -245,3 +245,4 @@ function removePendingPost(pendingPostIds, id) {
         pendingPostIds.splice(pendingIndex, 1);
     }
 }
+

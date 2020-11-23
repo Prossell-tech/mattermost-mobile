@@ -63,3 +63,4 @@ describe('ActionMenu', () => {
         expect(wrapper.props().disabled).toBe(true);
     });
 });
+
