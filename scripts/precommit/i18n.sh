@@ -12,4 +12,3 @@ npm run mmjstool -- i18n clean-empty --webapp-dir tmp/fake-webapp-dir --mobile-d
 
 rm -rf tmp
 
-
