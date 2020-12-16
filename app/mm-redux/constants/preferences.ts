@@ -61,7 +61,7 @@ const Preferences: Dictionary<any> = {
             mentionColor: '#127cc5',
             centerChannelBg: '#ffffff',
             centerChannelColor: '#2e3133',
-            newMessageSeparator:'#9bb379',
+            newMessageSeparator: '#9bb379',
             linkColor: '#127cc5',
             buttonBg: '#127cc5',
             buttonColor: '#ffffff',

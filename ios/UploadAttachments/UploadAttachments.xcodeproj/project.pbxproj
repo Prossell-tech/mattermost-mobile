@@ -5,6 +5,7 @@
 	};
 	objectVersion = 50;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		7F80232C229C91AD0034D6D4 /* MMMConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FABE054221387B500D0F595 /* MMMConstants.h */; };
 		7F82907122C295AC0035544F /* MMKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F82907022C295AC0035544F /* MMKeychainManager.m */; };
@@ -156,6 +157,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7FABE02D22137F2900D0F595;
 			productRefGroup = 7FABE03722137F2900D0F595 /* Products */;
@@ -240,7 +242,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: miyake.kentaro0815@gmail.com (ATK46R44JQ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -301,7 +303,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development: miyake.kentaro0815@gmail.com (ATK46R44JQ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
