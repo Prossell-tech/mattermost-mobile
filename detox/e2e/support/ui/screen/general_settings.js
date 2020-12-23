@@ -49,4 +49,3 @@ class GeneralSettingsScreen {
 
 const generalSettingsScreen = new GeneralSettingsScreen();
 export default generalSettingsScreen;
-

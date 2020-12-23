@@ -100,4 +100,3 @@ const styles = StyleSheet.create({
 Body.displayName = 'Body';
 
 export default Body;
-

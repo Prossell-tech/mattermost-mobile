@@ -38,4 +38,3 @@ export default function mergeObjects(a, b, path = '.') {
 
     return result;
 }
-

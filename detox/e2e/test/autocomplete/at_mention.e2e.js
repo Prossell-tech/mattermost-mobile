@@ -191,4 +191,3 @@ describe('Autocomplete', () => {
         await expect(atMentionSuggestionList).toExist();
     });
 });
-

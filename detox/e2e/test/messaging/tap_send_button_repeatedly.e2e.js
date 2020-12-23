@@ -58,4 +58,3 @@ describe('Messaging', () => {
         jestExpect(posts[2].message).toEqual('sysadmin joined the team.');
     });
 });
-

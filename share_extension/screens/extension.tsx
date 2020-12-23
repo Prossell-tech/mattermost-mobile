@@ -74,4 +74,3 @@ export default class ShareExtension extends PureComponent {
         return <Navigation/>;
     }
 }
-

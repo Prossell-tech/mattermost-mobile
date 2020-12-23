@@ -42,4 +42,3 @@ describe('Enable Upload', () => {
         await expect(imageQuickAction).toBeVisible();
     });
 });
-

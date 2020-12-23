@@ -44,4 +44,3 @@ fs.writeFile('./packager/modulePaths.js', fileData, (err) => {
 
     console.log('Done');
 });
-

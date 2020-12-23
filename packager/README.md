@@ -32,4 +32,3 @@
 	- configureStore.dev.js -> configureStore.prod.js
 	- react/cjs/react.development.js -> react/cjs/react.production.min.js
 	- schedule/cjs/scheduler-tracing.development.js -> schedule/cjs/scheduler-tracing.production.min.js
-

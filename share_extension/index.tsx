@@ -53,4 +53,3 @@ const ShareExtension = () => {
 };
 
 export default ShareExtension;
-

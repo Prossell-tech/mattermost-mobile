@@ -8,8 +8,8 @@
     "TeamEditionLearnURL": "mattermost.org",
     "AboutTeamURL": "https://community.prossell.jp/",
     "AboutEnterpriseURL": "https://community.prossell.jp/",
-    "PlatformNoticeURL": "",
-    "MobileNoticeURL": "",
+    "PlatformNoticeURL": "https://about.mattermost.com/platform-notice-txt/",
+    "MobileNoticeURL": "https://about.mattermost.com/mobile-notice-txt/",
     "RudderApiKey": "",
 
     "HideEmailLoginExperimental": false,
@@ -36,8 +36,8 @@
     "EnableMobileClientUpgrade": false,
     "EnableMobileClientUpgradeUserSetting": false,
     "EnableForceMobileClientUpgrade": false,
-    "MobileClientUpgradeAndroidApkLink": "",
-    "MobileClientUpgradeIosIpaLink": "",
+    "MobileClientUpgradeAndroidApkLink": "https://about.mattermost.com/mattermost-android-app/",
+    "MobileClientUpgradeIosIpaLink": "https://about.mattermost.com/mattermost-ios-app/",
 
     "ShowSentryDebugOptions": false,
 

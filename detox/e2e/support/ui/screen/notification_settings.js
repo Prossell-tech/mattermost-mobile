@@ -35,4 +35,3 @@ class NotificationSettingsScreen {
 
 const notificationSettingsScreen = new NotificationSettingsScreen();
 export default notificationSettingsScreen;
-

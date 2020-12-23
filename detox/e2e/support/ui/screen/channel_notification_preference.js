@@ -40,4 +40,3 @@ class ChannelNotificationPreferenceScreen {
 
 const channelNotificationPreferenceScreen = new ChannelNotificationPreferenceScreen();
 export default channelNotificationPreferenceScreen;
-

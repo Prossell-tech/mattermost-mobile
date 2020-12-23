@@ -250,4 +250,3 @@ end
 # rubocop:enable Style/CaseEquality
 # rubocop:enable Style/MultilineTernaryOperator
 # rubocop:enable Style/NestedTernaryOperator
-

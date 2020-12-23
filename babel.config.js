@@ -39,4 +39,3 @@ module.exports = {
     ],
     exclude: ['**/*.png', '**/*.jpg', '**/*.gif'],
 };
-

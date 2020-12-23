@@ -23,4 +23,3 @@ class CustomDetoxEnvironment extends DetoxCircusEnvironment {
 }
 
 module.exports = CustomDetoxEnvironment;
-
