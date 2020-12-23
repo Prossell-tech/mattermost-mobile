@@ -117,4 +117,3 @@ async function setGlobalNotificationsTo(pushKey) {
     await NotificationSettingsScreen.back();
     await GeneralSettingsScreen.close();
 }
-

@@ -58,4 +58,3 @@ describe('Channel Info Header', () => {
         await ChannelInfoScreen.close();
     });
 });
-

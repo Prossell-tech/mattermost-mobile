@@ -6,4 +6,3 @@ import {goToScreen} from '@actions/navigation';
 import DevMenu from 'react-native-dev-menu';
 DevMenu.addItem('StoryBook', () => goToScreen('StoryBook', 'StoryBook'));
 Navigation.registerComponent('StoryBook', () => require('../storybook').default, () => require('../storybook').default);
-

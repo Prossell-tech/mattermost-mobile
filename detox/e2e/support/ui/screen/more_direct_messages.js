@@ -34,4 +34,3 @@ class MoreDirectMessagesScreen {
 
 const moreDirectMessagesScreen = new MoreDirectMessagesScreen();
 export default moreDirectMessagesScreen;
-

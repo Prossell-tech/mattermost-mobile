@@ -474,4 +474,3 @@ class TestHelper {
 }
 
 export default new TestHelper();
-

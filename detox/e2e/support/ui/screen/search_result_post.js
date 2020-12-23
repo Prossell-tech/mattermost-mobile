@@ -5,14 +5,22 @@ import {Post} from '@support/ui/component';
 
 class SearchResultPostScreen {
     testID = {
-        searchResultPostScreenPrefix: 'search_result_post.',
+        searchResultPostItem: 'search_result_post.post',
     }
 
-    getPost = (postId, text) => {
-        return Post.getPost(this.testID.searchResultPostScreenPrefix, postId, text);
+    getPost = (postId, postMessage) => {
+        const {postItem, postItemHeaderReply, postItemMessage} = Post.getPost(this.testID.searchResultPostItem, postId, postMessage);
+        return {
+            searchResultPostItem: postItem,
+            searchResultPostItemHeaderReply: postItemHeaderReply,
+            searchResultPostItemMessage: postItemMessage,
+        };
+    }
+
+    getPostMessageAtIndex = (index) => {
+        return Post.getPostMessage(this.testID.searchResultPostItem).atIndex(index);
     }
 }
 
 const searchResultPostScreen = new SearchResultPostScreen();
 export default searchResultPostScreen;
-

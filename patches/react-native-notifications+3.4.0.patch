@@ -443,7 +443,7 @@ diff --git a/node_modules/react-native-notifications/lib/ios/RNNotificationCente
 index 1fbd2a5..ab44587 100644
 --- a/node_modules/react-native-notifications/lib/ios/RNNotificationCenter.m
 +++ b/node_modules/react-native-notifications/lib/ios/RNNotificationCenter.m
-@@ -58,7 +58,7 @@
+@@ -58,7 +58,7 @@ - (void)getDeliveredNotifications:(RCTResponseSenderBlock)callback {
          for (UNNotification *notification in notifications) {
              [formattedNotifications addObject:[RCTConvert UNNotificationPayload:notification]];
          }

@@ -22,4 +22,3 @@ class CustomPathBuilder {
 module.exports = ({rootDir}) => {
     return new CustomPathBuilder({rootDir});
 };
-

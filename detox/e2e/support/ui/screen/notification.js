@@ -23,4 +23,3 @@ class NotificationScreen {
 
 const notificationScreen = new NotificationScreen();
 export default notificationScreen;
-

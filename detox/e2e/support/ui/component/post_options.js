@@ -47,4 +47,3 @@ class PostOptions {
 
 const postOptions = new PostOptions();
 export default postOptions;
-

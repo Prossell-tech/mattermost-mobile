@@ -59,7 +59,7 @@ module Fastlane
         else
           # Store the version name in the shared hash
           Actions.lane_context["ANDROID_APPLICATION_ID"]=new_application_id
-          UI.success("☝︁Eapplication_id has been changed to #{new_application_id}")
+          UI.success("☝️ application_id has been changed to #{new_application_id}")
         end
 
         return new_application_id
@@ -108,4 +108,3 @@ end
 # rubocop:enable Style/CaseEquality
 # rubocop:enable Style/MultilineTernaryOperator
 # rubocop:enable Style/NestedTernaryOperator
-

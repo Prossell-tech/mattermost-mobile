@@ -45,4 +45,3 @@ export const apiUploadFile = async (name, absFilePath, requestOptions = {}) => {
         return getResponseFromError(err);
     }
 };
-

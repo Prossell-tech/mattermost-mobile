@@ -1,0 +1,834 @@
+diff --git a/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js b/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js
+index 2ac53e7..dc0c2cd 100644
+--- a/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js
++++ b/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js
+@@ -555,7 +555,7 @@ if (global.RN$Bridgeless) {
+   AndroidTextInputNativeComponent = 'AndroidTextInput';
+ } else {
+   AndroidTextInputNativeComponent = requireNativeComponent<NativeProps>(
+-    'AndroidTextInput',
++    'PasteableTextInputAndroid',
+   );
+ }
+ 
+diff --git a/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js.orig b/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js.orig
+new file mode 100644
+index 0000000..2ac53e7
+--- /dev/null
++++ b/node_modules/react-native/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js.orig
+@@ -0,0 +1,563 @@
++/**
++ * Copyright (c) Facebook, Inc. and its affiliates.
++ *
++ * This source code is licensed under the MIT license found in the
++ * LICENSE file in the root directory of this source tree.
++ *
++ * @flow strict-local
++ * @format
++ */
++
++'use strict';
++
++import type {ViewProps} from '../View/ViewPropTypes';
++import type {
++  BubblingEventHandler,
++  DirectEventHandler,
++  Double,
++  Float,
++  Int32,
++  WithDefault,
++} from '../../Types/CodegenTypes';
++import type {HostComponent} from '../../Renderer/shims/ReactNativeTypes';
++import type {TextStyleProp, ViewStyleProp} from '../../StyleSheet/StyleSheet';
++import type {ColorValue} from '../../StyleSheet/StyleSheetTypes';
++import requireNativeComponent from '../../ReactNative/requireNativeComponent';
++import codegenNativeCommands from '../../Utilities/codegenNativeCommands';
++import type {TextInputNativeCommands} from './TextInputNativeCommands';
++import * as React from 'react';
++import AndroidTextInputViewConfig from './AndroidTextInputViewConfig';
++const ReactNativeViewConfigRegistry = require('../../Renderer/shims/ReactNativeViewConfigRegistry');
++
++export type KeyboardType =
++  // Cross Platform
++  | 'default'
++  | 'email-address'
++  | 'numeric'
++  | 'phone-pad'
++  | 'number-pad'
++  | 'decimal-pad'
++  // iOS-only
++  | 'ascii-capable'
++  | 'numbers-and-punctuation'
++  | 'url'
++  | 'name-phone-pad'
++  | 'twitter'
++  | 'web-search'
++  // Android-only
++  | 'visible-password';
++
++export type ReturnKeyType =
++  // Cross Platform
++  | 'done'
++  | 'go'
++  | 'next'
++  | 'search'
++  | 'send'
++  // Android-only
++  | 'none'
++  | 'previous'
++  // iOS-only
++  | 'default'
++  | 'emergency-call'
++  | 'google'
++  | 'join'
++  | 'route'
++  | 'yahoo';
++
++export type NativeProps = $ReadOnly<{|
++  // This allows us to inherit everything from ViewProps except for style (see below)
++  // This must be commented for Fabric codegen to work.
++  ...$Diff<ViewProps, $ReadOnly<{|style: ?ViewStyleProp|}>>,
++
++  /**
++   * Android props after this
++   */
++  /**
++   * Determines which content to suggest on auto complete, e.g.`username`.
++   * To disable auto complete, use `off`.
++   *
++   * *Android Only*
++   *
++   * The following values work on Android only:
++   *
++   * - `username`
++   * - `password`
++   * - `email`
++   * - `name`
++   * - `tel`
++   * - `street-address`
++   * - `postal-code`
++   * - `cc-number`
++   * - `cc-csc`
++   * - `cc-exp`
++   * - `cc-exp-month`
++   * - `cc-exp-year`
++   * - `off`
++   *
++   * @platform android
++   */
++  autoCompleteType?: WithDefault<
++    | 'cc-csc'
++    | 'cc-exp'
++    | 'cc-exp-month'
++    | 'cc-exp-year'
++    | 'cc-number'
++    | 'email'
++    | 'name'
++    | 'password'
++    | 'postal-code'
++    | 'street-address'
++    | 'tel'
++    | 'username'
++    | 'off',
++    'off',
++  >,
++
++  /**
++   * Sets the return key to the label. Use it instead of `returnKeyType`.
++   * @platform android
++   */
++  returnKeyLabel?: ?string,
++
++  /**
++   * Sets the number of lines for a `TextInput`. Use it with multiline set to
++   * `true` to be able to fill the lines.
++   * @platform android
++   */
++  numberOfLines?: ?Int32,
++
++  /**
++   * When `false`, if there is a small amount of space available around a text input
++   * (e.g. landscape orientation on a phone), the OS may choose to have the user edit
++   * the text inside of a full screen text input mode. When `true`, this feature is
++   * disabled and users will always edit the text directly inside of the text input.
++   * Defaults to `false`.
++   * @platform android
++   */
++  disableFullscreenUI?: ?boolean,
++
++  /**
++   * Set text break strategy on Android API Level 23+, possible values are `simple`, `highQuality`, `balanced`
++   * The default value is `simple`.
++   * @platform android
++   */
++  textBreakStrategy?: WithDefault<
++    'simple' | 'highQuality' | 'balanced',
++    'simple',
++  >,
++
++  /**
++   * The color of the `TextInput` underline.
++   * @platform android
++   */
++  underlineColorAndroid?: ?ColorValue,
++
++  /**
++   * If defined, the provided image resource will be rendered on the left.
++   * The image resource must be inside `/android/app/src/main/res/drawable` and referenced
++   * like
++   * ```
++   * <TextInput
++   *  inlineImageLeft='search_icon'
++   * />
++   * ```
++   * @platform android
++   */
++  inlineImageLeft?: ?string,
++
++  /**
++   * Padding between the inline image, if any, and the text input itself.
++   * @platform android
++   */
++  inlineImagePadding?: ?Int32,
++
++  importantForAutofill?: string /*?(
++    | 'auto'
++    | 'no'
++    | 'noExcludeDescendants'
++    | 'yes'
++    | 'yesExcludeDescendants'
++  ),*/,
++
++  /**
++   * When `false`, it will prevent the soft keyboard from showing when the field is focused.
++   * Defaults to `true`.
++   * @platform android
++   */
++  showSoftInputOnFocus?: ?boolean,
++
++  /**
++   * TextInput props after this
++   */
++  /**
++   * Can tell `TextInput` to automatically capitalize certain characters.
++   *
++   * - `characters`: all characters.
++   * - `words`: first letter of each word.
++   * - `sentences`: first letter of each sentence (*default*).
++   * - `none`: don't auto capitalize anything.
++   */
++  autoCapitalize?: WithDefault<
++    'none' | 'sentences' | 'words' | 'characters',
++    'none',
++  >,
++
++  /**
++   * If `false`, disables auto-correct. The default value is `true`.
++   */
++  autoCorrect?: ?boolean,
++
++  /**
++   * If `true`, focuses the input on `componentDidMount`.
++   * The default value is `false`.
++   */
++  autoFocus?: ?boolean,
++
++  /**
++   * Specifies whether fonts should scale to respect Text Size accessibility settings. The
++   * default is `true`.
++   */
++  allowFontScaling?: ?boolean,
++
++  /**
++   * Specifies largest possible scale a font can reach when `allowFontScaling` is enabled.
++   * Possible values:
++   * `null/undefined` (default): inherit from the parent node or the global default (0)
++   * `0`: no max, ignore parent/global default
++   * `>= 1`: sets the maxFontSizeMultiplier of this node to this value
++   */
++  maxFontSizeMultiplier?: ?Float,
++
++  /**
++   * If `false`, text is not editable. The default value is `true`.
++   */
++  editable?: ?boolean,
++
++  /**
++   * Determines which keyboard to open, e.g.`numeric`.
++   *
++   * The following values work across platforms:
++   *
++   * - `default`
++   * - `numeric`
++   * - `number-pad`
++   * - `decimal-pad`
++   * - `email-address`
++   * - `phone-pad`
++   *
++   * *Android Only*
++   *
++   * The following values work on Android only:
++   *
++   * - `visible-password`
++   */
++  keyboardType?: WithDefault<KeyboardType, 'default'>,
++
++  /**
++   * Determines how the return key should look. On Android you can also use
++   * `returnKeyLabel`.
++   *
++   * *Cross platform*
++   *
++   * The following values work across platforms:
++   *
++   * - `done`
++   * - `go`
++   * - `next`
++   * - `search`
++   * - `send`
++   *
++   * *Android Only*
++   *
++   * The following values work on Android only:
++   *
++   * - `none`
++   * - `previous`
++   */
++  returnKeyType?: WithDefault<ReturnKeyType, 'done'>,
++
++  /**
++   * Limits the maximum number of characters that can be entered. Use this
++   * instead of implementing the logic in JS to avoid flicker.
++   */
++  maxLength?: ?Int32,
++
++  /**
++   * If `true`, the text input can be multiple lines.
++   * The default value is `false`.
++   */
++  multiline?: ?boolean,
++
++  /**
++   * Callback that is called when the text input is blurred.
++   * `target` is the reactTag of the element
++   */
++  onBlur?: ?BubblingEventHandler<$ReadOnly<{|target: Int32|}>>,
++
++  /**
++   * Callback that is called when the text input is focused.
++   * `target` is the reactTag of the element
++   */
++  onFocus?: ?BubblingEventHandler<$ReadOnly<{|target: Int32|}>>,
++
++  /**
++   * Callback that is called when the text input's text changes.
++   * `target` is the reactTag of the element
++   * TODO: differentiate between onChange and onChangeText
++   */
++  onChange?: ?BubblingEventHandler<
++    $ReadOnly<{|target: Int32, eventCount: Int32, text: string|}>,
++  >,
++
++  /**
++   * Callback that is called when the text input's text changes.
++   * Changed text is passed as an argument to the callback handler.
++   * TODO: differentiate between onChange and onChangeText
++   */
++  onChangeText?: ?BubblingEventHandler<
++    $ReadOnly<{|target: Int32, eventCount: Int32, text: string|}>,
++  >,
++
++  /**
++   * Callback that is called when the text input's content size changes.
++   * This will be called with
++   * `{ nativeEvent: { contentSize: { width, height } } }`.
++   *
++   * Only called for multiline text inputs.
++   */
++  onContentSizeChange?: ?DirectEventHandler<
++    $ReadOnly<{|
++      target: Int32,
++      contentSize: $ReadOnly<{|width: Double, height: Double|}>,
++    |}>,
++  >,
++
++  onTextInput?: ?BubblingEventHandler<
++    $ReadOnly<{|
++      target: Int32,
++      text: string,
++      previousText: string,
++      range: $ReadOnly<{|start: Double, end: Double|}>,
++    |}>,
++  >,
++
++  /**
++   * Callback that is called when text input ends.
++   */
++  onEndEditing?: ?BubblingEventHandler<
++    $ReadOnly<{|target: Int32, text: string|}>,
++  >,
++
++  /**
++   * Callback that is called when the text input selection is changed.
++   * This will be called with
++   * `{ nativeEvent: { selection: { start, end } } }`.
++   */
++  onSelectionChange?: ?DirectEventHandler<
++    $ReadOnly<{|
++      target: Int32,
++      selection: $ReadOnly<{|start: Double, end: Double|}>,
++    |}>,
++  >,
++
++  /**
++   * Callback that is called when the text input's submit button is pressed.
++   * Invalid if `multiline={true}` is specified.
++   */
++  onSubmitEditing?: ?BubblingEventHandler<
++    $ReadOnly<{|target: Int32, text: string|}>,
++  >,
++
++  /**
++   * Callback that is called when a key is pressed.
++   * This will be called with `{ nativeEvent: { key: keyValue } }`
++   * where `keyValue` is `'Enter'` or `'Backspace'` for respective keys and
++   * the typed-in character otherwise including `' '` for space.
++   * Fires before `onChange` callbacks.
++   */
++  onKeyPress?: ?BubblingEventHandler<$ReadOnly<{|target: Int32, key: string|}>>,
++
++  /**
++   * Invoked on content scroll with `{ nativeEvent: { contentOffset: { x, y } } }`.
++   * May also contain other properties from ScrollEvent but on Android contentSize
++   * is not provided for performance reasons.
++   */
++  onScroll?: ?DirectEventHandler<
++    $ReadOnly<{|
++      target: Int32,
++      responderIgnoreScroll: boolean,
++      contentInset: $ReadOnly<{|
++        top: Double, // always 0 on Android
++        bottom: Double, // always 0 on Android
++        left: Double, // always 0 on Android
++        right: Double, // always 0 on Android
++      |}>,
++      contentOffset: $ReadOnly<{|
++        x: Double,
++        y: Double,
++      |}>,
++      contentSize: $ReadOnly<{|
++        width: Double, // always 0 on Android
++        height: Double, // always 0 on Android
++      |}>,
++      layoutMeasurement: $ReadOnly<{|
++        width: Double,
++        height: Double,
++      |}>,
++      velocity: $ReadOnly<{|
++        x: Double, // always 0 on Android
++        y: Double, // always 0 on Android
++      |}>,
++    |}>,
++  >,
++
++  /**
++   * The string that will be rendered before text input has been entered.
++   */
++  placeholder?: ?string,
++
++  /**
++   * The text color of the placeholder string.
++   */
++  placeholderTextColor?: ?ColorValue,
++
++  /**
++   * If `true`, the text input obscures the text entered so that sensitive text
++   * like passwords stay secure. The default value is `false`. Does not work with 'multiline={true}'.
++   */
++  secureTextEntry?: ?boolean,
++
++  /**
++   * The highlight and cursor color of the text input.
++   */
++  selectionColor?: ?ColorValue,
++
++  /**
++   * The start and end of the text input's selection. Set start and end to
++   * the same value to position the cursor.
++   */
++  selection?: ?$ReadOnly<{|
++    start: Int32,
++    end?: ?Int32,
++  |}>,
++
++  /**
++   * The value to show for the text input. `TextInput` is a controlled
++   * component, which means the native value will be forced to match this
++   * value prop if provided. For most uses, this works great, but in some
++   * cases this may cause flickering - one common cause is preventing edits
++   * by keeping value the same. In addition to simply setting the same value,
++   * either set `editable={false}`, or set/update `maxLength` to prevent
++   * unwanted edits without flicker.
++   */
++  value?: ?string,
++
++  /**
++   * Provides an initial value that will change when the user starts typing.
++   * Useful for simple use-cases where you do not want to deal with listening
++   * to events and updating the value prop to keep the controlled state in sync.
++   */
++  defaultValue?: ?string,
++
++  /**
++   * If `true`, all text will automatically be selected on focus.
++   */
++  selectTextOnFocus?: ?boolean,
++
++  /**
++   * If `true`, the text field will blur when submitted.
++   * The default value is true for single-line fields and false for
++   * multiline fields. Note that for multiline fields, setting `blurOnSubmit`
++   * to `true` means that pressing return will blur the field and trigger the
++   * `onSubmitEditing` event instead of inserting a newline into the field.
++   */
++  blurOnSubmit?: ?boolean,
++
++  /**
++   * Note that not all Text styles are supported, an incomplete list of what is not supported includes:
++   *
++   * - `borderLeftWidth`
++   * - `borderTopWidth`
++   * - `borderRightWidth`
++   * - `borderBottomWidth`
++   * - `borderTopLeftRadius`
++   * - `borderTopRightRadius`
++   * - `borderBottomRightRadius`
++   * - `borderBottomLeftRadius`
++   *
++   * see [Issue#7070](https://github.com/facebook/react-native/issues/7070)
++   * for more detail.
++   *
++   * [Styles](docs/style.html)
++   */
++  // TODO: figure out what to do with this style prop for codegen/Fabric purposes
++  // This must be commented for Fabric codegen to work; it's currently not possible
++  // to override the default View style prop in codegen.
++  style?: ?TextStyleProp,
++
++  /**
++   * If `true`, caret is hidden. The default value is `false`.
++   * This property is supported only for single-line TextInput component on iOS.
++   */
++  caretHidden?: ?boolean,
++
++  /*
++   * If `true`, contextMenuHidden is hidden. The default value is `false`.
++   */
++  contextMenuHidden?: ?boolean,
++
++  /**
++   * The following are props that `BaseTextShadowNode` takes. It is unclear if they
++   * are used by TextInput.
++   */
++  textShadowColor?: ?ColorValue,
++  textShadowRadius?: ?Float,
++  textDecorationLine?: ?string,
++  fontStyle?: ?string,
++  textShadowOffset?: ?$ReadOnly<{|width?: ?Double, height?: ?Double|}>,
++  lineHeight?: ?Float,
++  textTransform?: ?string,
++  color?: ?Int32,
++  letterSpacing?: ?Float,
++  fontSize?: ?Float,
++  textAlign?: ?string,
++  includeFontPadding?: ?boolean,
++  fontWeight?: ?string,
++  fontFamily?: ?string,
++
++  /**
++   * I cannot find where these are defined but JS complains without them.
++   */
++  textAlignVertical?: ?string,
++  cursorColor?: ?ColorValue,
++
++  /**
++   * "Private" fields used by TextInput.js and not users of this component directly
++   */
++  mostRecentEventCount: Int32,
++  text?: ?string,
++|}>;
++
++type NativeType = HostComponent<NativeProps>;
++
++type NativeCommands = TextInputNativeCommands<NativeType>;
++
++export const Commands: NativeCommands = codegenNativeCommands<NativeCommands>({
++  supportedCommands: ['focus', 'blur', 'setTextAndSelection'],
++});
++
++let AndroidTextInputNativeComponent;
++if (global.RN$Bridgeless) {
++  ReactNativeViewConfigRegistry.register('AndroidTextInput', () => {
++    return AndroidTextInputViewConfig;
++  });
++  AndroidTextInputNativeComponent = 'AndroidTextInput';
++} else {
++  AndroidTextInputNativeComponent = requireNativeComponent<NativeProps>(
++    'AndroidTextInput',
++  );
++}
++
++// flowlint-next-line unclear-type:off
++export default ((AndroidTextInputNativeComponent: any): HostComponent<NativeProps>);
+diff --git a/node_modules/react-native/Libraries/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h b/node_modules/react-native/Libraries/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h
+index 2da6323..1f64ffe 100644
+--- a/node_modules/react-native/Libraries/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h
++++ b/node_modules/react-native/Libraries/FBReactNativeSpec/FBReactNativeSpec/FBReactNativeSpec.h
+@@ -2796,6 +2796,7 @@ namespace JS {
+   namespace NativeWebSocketModule {
+     struct SpecConnectOptions {
+       id<NSObject> _Nullable headers() const;
++      NSString *certificate() const;
+ 
+       SpecConnectOptions(NSDictionary *const v) : _v(v) {}
+     private:
+@@ -3862,3 +3863,9 @@ inline id<NSObject> _Nullable JS::NativeWebSocketModule::SpecConnectOptions::hea
+   id const p = _v[@"headers"];
+   return p;
+ }
++
++inline NSString *JS::NativeWebSocketModule::SpecConnectOptions::certificate() const
++{
++    id const p = _v[@"certificate"];
++    return p;
++}
+diff --git a/node_modules/react-native/Libraries/Lists/VirtualizedList.js b/node_modules/react-native/Libraries/Lists/VirtualizedList.js
+index 9ec105f..18f7bf6 100644
+--- a/node_modules/react-native/Libraries/Lists/VirtualizedList.js
++++ b/node_modules/react-native/Libraries/Lists/VirtualizedList.js
+@@ -20,6 +20,7 @@ const ScrollView = require('../Components/ScrollView/ScrollView');
+ const StyleSheet = require('../StyleSheet/StyleSheet');
+ const View = require('../Components/View/View');
+ const ViewabilityHelper = require('./ViewabilityHelper');
++const Platform = require('../Utilities/Platform');
+ 
+ const flattenStyle = require('../StyleSheet/flattenStyle');
+ const infoLog = require('../Utilities/infoLog');
+@@ -2186,7 +2187,7 @@ function describeNestedLists(childList: {
+ 
+ const styles = StyleSheet.create({
+   verticallyInverted: {
+-    transform: [{scaleY: -1}],
++    ...Platform.select({android: {transform: [{perspective: 1}, {scaleY: -1}]}, ios: {transform: [{scaleY: -1}]}}),
+   },
+   horizontallyInverted: {
+     transform: [{scaleX: -1}],
+diff --git a/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h b/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h
+index 1b17cff..70a59b6 100644
+--- a/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h
++++ b/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h
+@@ -54,13 +54,14 @@ extern NSString *const RCTSRHTTPResponseErrorKey;
+ 
+ @property (nonatomic, readonly) RCTSRReadyState readyState;
+ @property (nonatomic, readonly, strong) NSURL *url;
++@property (nonatomic, readonly, strong) NSString *certificate;
+ 
+ // This returns the negotiated protocol.
+ // It will be nil until after the handshake completes.
+ @property (nonatomic, readonly, copy) NSString *protocol;
+ 
+ // Protocols should be an array of strings that turn into Sec-WebSocket-Protocol.
+-- (instancetype)initWithURLRequest:(NSURLRequest *)request protocols:(NSArray<NSString *> *)protocols NS_DESIGNATED_INITIALIZER;
++- (instancetype)initWithURLRequest:(NSURLRequest *)request protocols:(NSArray<NSString *> *)protocols certificate:(NSString *)certificate NS_DESIGNATED_INITIALIZER;
+ - (instancetype)initWithURLRequest:(NSURLRequest *)request;
+ 
+ // Some helper constructors.
+@@ -88,6 +89,9 @@ extern NSString *const RCTSRHTTPResponseErrorKey;
+ // Send Data (can be nil) in a ping message.
+ - (void)sendPing:(NSData *)data;
+ 
++// Get the certificate identity from the keyChain by name
++- (SecIdentityRef) GetIdentityByName:(NSString *)name;
++
+ @end
+ 
+ #pragma mark - RCTSRWebSocketDelegate
+diff --git a/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m b/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m
+index b967c14..1a38e00 100644
+--- a/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m
++++ b/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.m
+@@ -228,7 +228,7 @@ typedef void (^data_callback)(RCTSRWebSocket *webSocket,  NSData *data);
+   RCTSRIOConsumerPool *_consumerPool;
+ }
+ 
+-- (instancetype)initWithURLRequest:(NSURLRequest *)request protocols:(NSArray<NSString *> *)protocols
++- (instancetype)initWithURLRequest:(NSURLRequest *)request protocols:(NSArray<NSString *> *)protocols certificate:(NSString *)certificate
+ {
+   RCTAssertParam(request);
+ 
+@@ -238,6 +238,10 @@ typedef void (^data_callback)(RCTSRWebSocket *webSocket,  NSData *data);
+ 
+     _requestedProtocols = [protocols copy];
+ 
++    if (![certificate isKindOfClass:[NSNull class]]) {
++      _certificate = certificate;
++    }
++
+     [self _RCTSR_commonInit];
+   }
+   return self;
+@@ -247,7 +251,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
+ 
+ - (instancetype)initWithURLRequest:(NSURLRequest *)request
+ {
+-  return [self initWithURLRequest:request protocols:nil];
++  return [self initWithURLRequest:request protocols:nil certificate:self.certificate];
+ }
+ 
+ - (instancetype)initWithURL:(NSURL *)URL
+@@ -274,7 +278,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
+     NSArray<NSHTTPCookie *> *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:components.URL];
+     [request setAllHTTPHeaderFields:[NSHTTPCookie requestHeaderFieldsWithCookies:cookies]];
+   }
+-  return [self initWithURLRequest:request protocols:protocols];
++  return [self initWithURLRequest:request protocols:protocols certificate:self.certificate];
+ }
+ 
+ - (void)_RCTSR_commonInit
+@@ -344,6 +348,36 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
+ 
+ #endif
+ 
++- (SecIdentityRef) GetIdentityByName:(NSString *)name
++{
++  NSMutableDictionary * query = [[NSMutableDictionary alloc] init];
++
++  //Set up the invariant pieces of the query
++  [query setObject:(id)kSecMatchLimitAll forKey:(id)kSecMatchLimit];
++  [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnRef];
++  [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
++  [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
++  [query setObject:(id)kSecClassIdentity forKey:(id)kSecClass];
++  [query setObject:name forKey:(id)kSecAttrLabel];
++
++  OSStatus resultCode = noErr;
++  CFTypeRef result = nil;
++  //Execute the query saving the results in items.
++  resultCode = SecItemCopyMatching((CFDictionaryRef)query, &result);
++  CFDictionaryRef item = (CFDictionaryRef)CFArrayGetValueAtIndex((CFArrayRef)result, 0);
++  if (item != nil) {
++    SecIdentityRef identity = nil;
++    CFTypeRef value;
++    if(CFDictionaryGetValueIfPresent(item, kSecValueRef, &value))
++    {
++      identity = (SecIdentityRef)value;
++    }
++
++    return identity;
++  }
++  return nil;
++}
++
+ - (void)open
+ {
+   assert(_url);
+@@ -515,6 +549,24 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
+     RCTLogInfo(@"SocketRocket: In debug mode.  Allowing connection to any root cert");
+ #endif
+ 
++    if (_certificate) {
++      SecIdentityRef identity = [self GetIdentityByName:_certificate];
++      if (identity != nil) {
++        SecCertificateRef certificate = NULL;
++        OSStatus status = SecIdentityCopyCertificate(identity, &certificate);
++        if (!status) {
++          NSArray *myCerts = [[NSArray alloc] initWithObjects:(__bridge id)identity, (__bridge id)certificate, nil];
++
++          [SSLOptions setObject:[NSNumber numberWithBool:NO] forKey:(NSString *)kCFStreamSSLValidatesCertificateChain];
++          [SSLOptions setObject:[NSString stringWithFormat:@"%@:%d", host, port] forKey:(NSString *)kCFStreamSSLPeerName];
++          [SSLOptions setObject:(NSString *)kCFStreamSocketSecurityLevelNegotiatedSSL forKey:(NSString*)kCFStreamSSLLevel];
++          [SSLOptions setObject:(NSString *)kCFStreamSocketSecurityLevelNegotiatedSSL forKey:(NSString*)kCFStreamPropertySocketSecurityLevel];
++          [SSLOptions setObject:myCerts forKey:(NSString *)kCFStreamSSLCertificates];
++          [SSLOptions setObject:[NSNumber numberWithBool:NO] forKey:(NSString *)kCFStreamSSLIsServer];
++        }
++      }
++    }
++
+     [_outputStream setProperty:SSLOptions
+                         forKey:(__bridge id)kCFStreamPropertySSLSettings];
+   }
+diff --git a/node_modules/react-native/Libraries/WebSocket/WebSocket.js b/node_modules/react-native/Libraries/WebSocket/WebSocket.js
+index 0b051c4..d5bbf3f 100644
+--- a/node_modules/react-native/Libraries/WebSocket/WebSocket.js
++++ b/node_modules/react-native/Libraries/WebSocket/WebSocket.js
+@@ -91,7 +91,7 @@ class WebSocket extends (EventTarget(...WEBSOCKET_EVENTS): any) {
+       protocols = [protocols];
+     }
+ 
+-    const {headers = {}, ...unrecognized} = options || {};
++    const {headers = {}, certificate = {}, ...unrecognized} = options || {};
+ 
+     // Preserve deprecated backwards compatibility for the 'origin' option
+     /* $FlowFixMe(>=0.68.0 site=react_native_fb) This comment suppresses an
+@@ -128,7 +128,7 @@ class WebSocket extends (EventTarget(...WEBSOCKET_EVENTS): any) {
+     this._eventEmitter = new NativeEventEmitter(NativeWebSocketModule);
+     this._socketId = nextWebSocketId++;
+     this._registerEvents();
+-    NativeWebSocketModule.connect(url, protocols, {headers}, this._socketId);
++    NativeWebSocketModule.connect(url, protocols, {headers, certificate}, this._socketId);
+   }
+ 
+   get binaryType(): ?BinaryType {
+diff --git a/node_modules/react-native/React/CoreModules/RCTWebSocketModule.mm b/node_modules/react-native/React/CoreModules/RCTWebSocketModule.mm
+index 9648b18..3594b43 100644
+--- a/node_modules/react-native/React/CoreModules/RCTWebSocketModule.mm
++++ b/node_modules/react-native/React/CoreModules/RCTWebSocketModule.mm
+@@ -88,7 +88,7 @@ RCT_EXPORT_METHOD(connect
+     }];
+   }
+ 
+-  RCTSRWebSocket *webSocket = [[RCTSRWebSocket alloc] initWithURLRequest:request protocols:protocols];
++  RCTSRWebSocket *webSocket = [[RCTSRWebSocket alloc] initWithURLRequest:request protocols:protocols certificate:options.certificate()];
+   [webSocket setDelegateDispatchQueue:[self methodQueue]];
+   webSocket.delegate = self;
+   webSocket.reactTag = @(socketID);
+diff --git a/node_modules/react-native/react.gradle b/node_modules/react-native/react.gradle
+index 6441d93..4a0cd01 100644
+--- a/node_modules/react-native/react.gradle
++++ b/node_modules/react-native/react.gradle
+@@ -157,7 +157,7 @@ afterEvaluate {
+ 
+             // Set up dev mode
+             def devEnabled = !(config."devDisabledIn${targetName}"
+-                || targetName.toLowerCase().contains("release"))
++                || targetName.toLowerCase().contains("release") || targetName.toLowerCase().contains("unsigned"))
+ 
+             def extraArgs = config.extraPackagerArgs ?: [];
+ 
+@@ -177,7 +177,7 @@ afterEvaluate {
+                     def hermesFlags;
+                     def hbcTempFile = file("${jsBundleFile}.hbc")
+                     exec {
+-                        if (targetName.toLowerCase().contains("release")) {
++                        if (targetName.toLowerCase().contains("release") || targetName.toLowerCase().contains("unsigned")) {
+                             // Can't use ?: since that will also substitute valid empty lists
+                             hermesFlags = config.hermesFlagsRelease
+                             if (hermesFlags == null) hermesFlags = ["-O", "-output-source-map"]
+@@ -221,7 +221,7 @@ afterEvaluate {
+                 ? config."bundleIn${targetName}"
+                 : config."bundleIn${variant.buildType.name.capitalize()}" != null
+                     ? config."bundleIn${variant.buildType.name.capitalize()}"
+-                    : targetName.toLowerCase().contains("release")
++                    : (targetName.toLowerCase().contains("release") || targetName.toLowerCase().contains("unsigned"))
+         }
+ 
+         // Expose a minimal interface on the application variant and the task itself:
+@@ -313,7 +313,7 @@ afterEvaluate {
+         // This should really be done by packaging all Hermes releated libs into
+         // two separate HermesDebug and HermesRelease AARs, but until then we'll
+         // kludge it by deleting the .so files out of the /transforms/ directory.
+-        def isRelease = targetName.toLowerCase().contains("release")
++        def isRelease = targetName.toLowerCase().contains("release") || targetName.toLowerCase().contains("unsigned")
+         def libDir = "$buildDir/intermediates/transforms/"
+         def vmSelectionAction = {
+             fileTree(libDir).matching {

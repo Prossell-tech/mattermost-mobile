@@ -18,7 +18,7 @@ index fabd291..45b322b 100644
  @implementation RCTYouTubeStandalone {
      RCTPromiseResolveBlock resolver;
      RCTPromiseRejectBlock rejecter;
-@@ -14,6 +23,7 @@ RCT_EXPORT_MODULE();
+@@ -14,6 +23,7 @@ @implementation RCTYouTubeStandalone {
  
  RCT_REMAP_METHOD(playVideo,
                   playVideoWithResolver:(NSString*)videoId
@@ -26,7 +26,7 @@ index fabd291..45b322b 100644
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
  {
-@@ -22,10 +32,10 @@ RCT_REMAP_METHOD(playVideo,
+@@ -22,10 +32,10 @@ @implementation RCTYouTubeStandalone {
      #else
          dispatch_async(dispatch_get_main_queue(), ^{
              UIViewController *root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
@@ -39,7 +39,7 @@ index fabd291..45b322b 100644
  
              [[XCDYouTubeClient defaultClient] getVideoWithIdentifier:videoId
                                                     completionHandler:^(XCDYouTubeVideo * _Nullable video, NSError * _Nullable error) {
-@@ -38,10 +48,18 @@ RCT_REMAP_METHOD(playVideo,
+@@ -38,10 +48,18 @@ @implementation RCTYouTubeStandalone {
                          streamURLs[@(XCDYouTubeVideoQualitySmall240)
                      ];
  

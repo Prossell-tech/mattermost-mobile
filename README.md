@@ -63,17 +63,16 @@ We plan to add support for tablets in the future, but the timeline depends on ho
 
 ### I keep getting a message "Cannot connect to the server. Please check your server URL and internet connection."
 
-This sometimes appears when there is an issue with the SSL certitificate configuration. 
+This sometimes appears when there is an issue with the SSL certificate configuration. 
 
 To check that your SSL certificate is set up correctly, test the SSL certificate by visiting a site such as https://www.ssllabs.com/ssltest/index.html. If there’s an error about the missing chain or certificate path, there is likely an intermediate certificate missing that needs to be included.
 
 Please note that the apps cannot connect to servers with self-signed certificates, consider using [Let's Encrypt](https://docs.mattermost.com/install/config-ssl-http2-nginx.html) instead. 
 
-### I see a “Connecting… Ebar that does not go away
+### I see a “Connecting…” bar that does not go away
 
-If your app is working properly, you should see a grey “Connecting… Ebar that clears or says “Connected Eafter the app reconnects. 
+If your app is working properly, you should see a grey “Connecting…” bar that clears or says “Connected” after the app reconnects. 
 
 If you are seeing this message all the time, and your internet connection seems fine: 
 
 Ask your server administrator if the server uses NGINX or another webserver as a reverse proxy. If so, they should check that it is configured correctly for [supporting the websocket connection for APIv4 endpoints](https://docs.mattermost.com/install/install-ubuntu-1604.html#configuring-nginx-as-a-proxy-for-mattermost-server). 
-

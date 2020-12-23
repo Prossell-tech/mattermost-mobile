@@ -9,4 +9,3 @@ module.exports = {
     ldapServer: process.env.LDAP_SERVER || 'localhost',
     ldapPort: process.env.LDAP_PORT || 389,
 };
-
