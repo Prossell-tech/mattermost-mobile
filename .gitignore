@@ -101,3 +101,5 @@ detox/artifacts
 
 #editor-settings
 .vscode
+
+./backup

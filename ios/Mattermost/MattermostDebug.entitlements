@@ -23,6 +23,8 @@
 		<string>group.jp.prossell.prossell-mobile</string>
 	</array>
 	<key>keychain-access-groups</key>
-	<array/>
+	<array>
+		<string>$(AppIdentifierPrefix)jp.prossell.prossell-mobile</string>
+	</array>
 </dict>
 </plist>

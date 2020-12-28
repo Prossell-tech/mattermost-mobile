@@ -1,7 +1,0 @@
-#!/usr/bin/groovy
-
-@Library('shared-pipelines') _
-
-mobile_daily_beta {
-    BRANCH = "master"
-}
