@@ -1,8 +1,8 @@
 {
-  "name": "mattermost-mobile",
-  "version": "1.38.1",
+  "name": "prossell-mobile",
+  "version": "1.0.0d",
   "description": "Mattermost Mobile with React Native",
-  "repository": "git@github.com:mattermost/mattermost-mobile.git",
+  "repository": "git@github.com:Prossell-tech/prossell-mobile.git",
   "author": "Prossell, Inc.",
   "license": "Apache 2.0",
   "private": true,
