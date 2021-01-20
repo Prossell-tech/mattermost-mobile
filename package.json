@@ -1,6 +1,6 @@
 {
   "name": "prossell-mobile",
-  "version": "1.0.0d",
+  "version": "1.0.0",
   "description": "Mattermost Mobile with React Native",
   "repository": "git@github.com:Prossell-tech/prossell-mobile.git",
   "author": "Prossell, Inc.",
