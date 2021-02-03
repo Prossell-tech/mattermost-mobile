@@ -126,7 +126,7 @@
   "login_mfa.token": "Jeton d'authentification multi-facteurs (MFA)",
   "login_mfa.tokenReq": "Veuillez spécifier un jeton d'authentification multi-facteurs (MFA)",
   "mobile.about.appVersion": "Version de l'App : {version} (Build {number})",
-  "mobile.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. Tous droits réservés",
+  "mobile.about.copyright": "Copyright 2020-{currentYear} Prossell, Inc. Tous droits réservés",
   "mobile.about.database": "Base de données : {type}",
   "mobile.about.licensed": "Licence accordée à : {company}",
   "mobile.about.powered_by": "{site} est propulsé par Prossell",

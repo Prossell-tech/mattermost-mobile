@@ -21,7 +21,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.38.1</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>338</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
@@ -62,31 +62,31 @@
 		</dict>
 	</dict>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>Let Mattermost access your Media files</string>
+	<string>Prossellがメディアにアクセスするのを許可しますか？</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Share post data across devices with Mattermost</string>
+	<string>ProssellがBluetoothを常に利用することを許可しますか？</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Share post data across devices with Mattermost</string>
+	<string>データ共有のためにProssellがBluetoothを利用することを許可しますか？</string>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Share contacts in your Mattermost instance</string>
+	<string>カレンダー機能の利用を許可しますか？</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Take a Photo or Video and upload it to your Mattermost instance</string>
+	<string>Prossellにカメラやビデオを行うのを許可しますか？</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Mattermost uses Face ID to restrict unauthorized users from accessing the app.</string>
+	<string>認証されていないユーザーから保護するためにProssellにFace IDの利用を許可しますか？</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Send your current location to your Mattermost instance</string>
+	<string>Prossellに現在に位置情報を送ることを許可しますか？</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Send your current location to your Mattermost instance</string>
+	<string>Prossellに現在に位置情報を送ることを許可しますか？</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Capture audio when recording a video to share to your Mattermost instance</string>
+	<string>ビデオを録画するときにオーディオをキャプチャして、Prossellと共有します</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Share your route in your Mattermost instance</string>
+	<string>Prossellにモーションキャプチャを許可しますか？</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Save downloaded Photos and Videos from your Mattermost instance to your device</string>
+	<string>Prossellに写真や動画ファイルをダウンロードすることを許可しますか？</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Upload Photos and Videos from your device to your Mattermost instance</string>
+	<string>Prossellにアルバムの写真と動画を送信することに同意しますか？</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Send voice messages to your Mattermost instance</string>
+	<string>Prossellに音声メッセージを送ることに同意しますか？</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Bold.ttf</string>

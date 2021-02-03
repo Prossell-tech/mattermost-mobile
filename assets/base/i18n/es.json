@@ -135,7 +135,7 @@
   "login_mfa.token": "Token MFA",
   "login_mfa.tokenReq": "Por favor ingresa un token MFA",
   "mobile.about.appVersion": "Versión del App: {version} (Compilación {number})",
-  "mobile.about.copyright": "Derechos de autor 2015-{currentYear} Mattermost, Inc. Todos los derechos reservados",
+  "mobile.about.copyright": "Derechos de autor 2020-{currentYear} Prossell, Inc. Todos los derechos reservados",
   "mobile.about.database": "Base de datos: {type}",
   "mobile.about.licensed": "Licenciado a: {company}",
   "mobile.about.powered_by": "{site} es impulsado por Prossell",

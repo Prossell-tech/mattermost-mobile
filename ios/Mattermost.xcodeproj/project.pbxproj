@@ -576,7 +576,7 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 9HV9W2V8MY;
+						DevelopmentTeam = 249P7NQX5G;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -599,7 +599,7 @@
 					};
 					7F240A18220D3A2300637665 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 9HV9W2V8MY;
+						DevelopmentTeam = 249P7NQX5G;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -609,7 +609,7 @@
 					};
 					7F581D31221ED5C60099E66B = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 9HV9W2V8MY;
+						DevelopmentTeam = 249P7NQX5G;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -912,12 +912,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Mattermost/MattermostDebug.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 338;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 9HV9W2V8MY;
+				DEVELOPMENT_TEAM = 249P7NQX5G;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -926,6 +926,7 @@
 				INFOPLIST_FILE = Mattermost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
@@ -937,8 +938,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.prossell.prossell-mobile";
 				PRODUCT_NAME = Mattermost;
-				PROVISIONING_PROFILE = "ef58f0e2-3f24-457c-bca5-a8232a880411";
-				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-test";
+				PROVISIONING_PROFILE = "31323dc6-7239-40d2-bebb-f1c63ac9b4fc";
+				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "Mattermost/Mattermost-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -955,12 +956,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Mattermost/Mattermost.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kentaro Miyake (9HV9W2V8MY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kentaro Miyake (9HV9W2V8MY)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PROSSELL, K.K. (249P7NQX5G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PROSSELL, K.K. (249P7NQX5G)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 338;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 9HV9W2V8MY;
+				DEVELOPMENT_TEAM = 249P7NQX5G;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -969,6 +970,7 @@
 				INFOPLIST_FILE = Mattermost/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
@@ -981,7 +983,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.prossell.prossell-mobile";
 				PRODUCT_NAME = Mattermost;
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-test-release";
+				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-store-release";
 				SWIFT_OBJC_BRIDGING_HEADER = "Mattermost/Mattermost-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1007,16 +1009,18 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = MattermostShare/MattermostShare.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9HV9W2V8MY;
+				DEVELOPMENT_TEAM = 249P7NQX5G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UploadAttachments/UploadAttachments";
 				INFOPLIST_FILE = MattermostShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = (
@@ -1025,8 +1029,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.prossell.prossell-mobile.MattermostShare";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "62b9c1b5-d7fb-4911-9923-4faa4889b2dd";
-				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-test-share";
+				PROVISIONING_PROFILE = "4e251e70-d2c2-4cb4-88fd-1cbee7f3b01e";
+				PROVISIONING_PROFILE_SPECIFIER = "prossell-share-dev";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "MattermostShare/MattermostShare-Bridging-Header.h";
@@ -1054,17 +1058,19 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = MattermostShare/MattermostShare.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kentaro Miyake (9HV9W2V8MY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kentaro Miyake (9HV9W2V8MY)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PROSSELL, K.K. (249P7NQX5G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PROSSELL, K.K. (249P7NQX5G)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9HV9W2V8MY;
+				DEVELOPMENT_TEAM = 249P7NQX5G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UploadAttachments/UploadAttachments";
 				INFOPLIST_FILE = MattermostShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1072,7 +1078,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.prossell.prossell-mobile.MattermostShare";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-share-release";
+				PROVISIONING_PROFILE_SPECIFIER = "prossell-share-release-store";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MattermostShare/MattermostShare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1099,15 +1105,17 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9HV9W2V8MY;
+				DEVELOPMENT_TEAM = 249P7NQX5G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = (
@@ -1116,8 +1124,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.prossell.prossell-mobile.NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cd04bac8-f7d5-4822-a170-98469c1edb09";
-				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-test-service";
+				PROVISIONING_PROFILE = "aa07e58f-4b81-4aa8-9cc4-4b64179afb5e";
+				PROVISIONING_PROFILE_SPECIFIER = "prossell-notify-dev";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1144,16 +1152,18 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kentaro Miyake (9HV9W2V8MY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kentaro Miyake (9HV9W2V8MY)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PROSSELL, K.K. (249P7NQX5G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PROSSELL, K.K. (249P7NQX5G)";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9HV9W2V8MY;
+				DEVELOPMENT_TEAM = 249P7NQX5G;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1161,7 +1171,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.prossell.prossell-mobile.NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "prossell-mobile-service-release";
+				PROVISIONING_PROFILE_SPECIFIER = "prossell-notify-release-store";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
@@ -1188,8 +1198,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (ATK46R44JQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kentaro Miyake (LG7UXB5VY6)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;

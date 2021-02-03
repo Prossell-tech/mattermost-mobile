@@ -135,7 +135,7 @@
   "login_mfa.token": "多要素認証トークン",
   "login_mfa.tokenReq": "多要素認証トークンを入力してください",
   "mobile.about.appVersion": "バージョン: {version} (ビルド {number})",
-  "mobile.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved",
+  "mobile.about.copyright": "Copyright 2020-{currentYear} Prossell, Inc. All rights reserved",
   "mobile.about.database": "データベース: {type}",
   "mobile.about.licensed": "ライセンス: {company}",
   "mobile.about.powered_by": "{site} はProssellを利用しています",

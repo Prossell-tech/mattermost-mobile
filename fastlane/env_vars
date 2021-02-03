@@ -55,7 +55,7 @@ export MAIN_APP_IDENTIFIER=jp.prossell.prossell-mobile
 export EXTENSION_APP_IDENTIFIER=jp.prossell.prossell-mobile.MattermostShare
 export NOTIFICATION_SERVICE_IDENTIFIER=jp.prossell.prossell-mobile.NotificationService
 export IOS_APP_GROUP=group.jp.prossell.prossell-mobile
-export IOS_ICLOUD_CONTAINER=iCloud.jp.prossell.prossell-mobile
+export IOS_ICLOUD_CONTAINER=iCloud.jp.prossell.release.prossell-mobile
 
 
 export IOS_BUILD_EXPORT_METHOD=app-store
@@ -84,9 +84,7 @@ export SUBMIT_ANDROID_TO_GOOGLE_PLAY=false
 /Users/notch_man/Downloads/prossellmobiletestshare.mobileprovision
 /Users/notch_man/Downloads/prossellmobiletest.mobileprovision
 
-/Users/notch_man/Downloads/prossellmobileservicerelease.mobileprovision
-/Users/notch_man/Downloads/prossellmobilesharerelease.mobileprovision
-/Users/notch_man/Downloads/prossellmobiletestrelease.mobileprovision
+
 
 
 rm -rf ~/Library/Application Support/Xcode

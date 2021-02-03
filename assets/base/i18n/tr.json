@@ -135,7 +135,7 @@
   "login_mfa.token": "ÇAKD Kodu",
   "login_mfa.tokenReq": "Lütfen bir ÇAKD kodu yazın",
   "mobile.about.appVersion": "Uygulama Sürümü: {version} (Build {number})",
-  "mobile.about.copyright": "Telif Hakkı 2015-{currentYear} Mattermost, Inc. Tüm hakları saklıdır",
+  "mobile.about.copyright": "Telif Hakkı 2020-{currentYear} Prossell, Inc. Tüm hakları saklıdır",
   "mobile.about.database": "Veritabanı: {type}",
   "mobile.about.licensed": "Lisans sahibi: {company}",
   "mobile.about.powered_by": "{site} sitesi Prossell tarafından sunulmaktadır",

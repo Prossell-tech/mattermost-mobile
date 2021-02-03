@@ -128,7 +128,7 @@
   "login_mfa.token": "Токен MFA",
   "login_mfa.tokenReq": "Будь-ласка, введіть токен MFA",
   "mobile.about.appVersion": "Версія програми: {version} (Збірка {number})",
-  "mobile.about.copyright": "Copyright 2015 - {currentYear} Mattermost, Inc. Всі права захищені",
+  "mobile.about.copyright": "Copyright 2020-{currentYear} Prossell, Inc. Всі права захищені",
   "mobile.about.database": "Тип бази даних: {type}",
   "mobile.about.licensed": "Ліцензія на: {company}",
   "mobile.about.powered_by": "{site} працює від Prossell",

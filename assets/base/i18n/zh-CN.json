@@ -135,7 +135,7 @@
   "login_mfa.token": "多重验证令牌",
   "login_mfa.tokenReq": "请输入多重验证令牌",
   "mobile.about.appVersion": "应用版本：{version} (Build {number})",
-  "mobile.about.copyright": "版权所有 2015-{currentYear} Mattermost, Inc. 保留所有权利",
+  "mobile.about.copyright": "版权所有 2020-{currentYear} Prossell, Inc. 保留所有权利",
   "mobile.about.database": "数据库：{type}",
   "mobile.about.licensed": "许可给：{company}",
   "mobile.about.powered_by": "{site} Powered by Prossell",

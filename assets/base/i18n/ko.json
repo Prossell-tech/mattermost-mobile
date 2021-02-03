@@ -135,7 +135,7 @@
   "login_mfa.token": "MFA 토큰",
   "login_mfa.tokenReq": "MFA 토큰을 입력하세요",
   "mobile.about.appVersion": "App Version: {version} (Build {number})",
-  "mobile.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved",
+  "mobile.about.copyright": "Copyright 2020-{currentYear} Prossell, Inc. All rights reserved",
   "mobile.about.database": "데이터베이스: {type}",
   "mobile.about.licensed": "다음 사용자에게 허가되었습니다: {company}",
   "mobile.about.powered_by": "{site} 사이트는 Prossell로 서비스됩니다",

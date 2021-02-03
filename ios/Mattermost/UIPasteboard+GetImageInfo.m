@@ -9,6 +9,7 @@
 #import "UIPasteboard+GetImageInfo.h"
 #import "NSData+MimeType.h"
 #import "Mattermost-Swift.h"
+//#import "Prossell-Swift.h"
 #import "UIImage+vImageScaling.h"
 
 @implementation UIPasteboard (GetImageInfo)

@@ -135,7 +135,7 @@
   "login_mfa.token": "Eroare încearcă să se autentifice Mae token",
   "login_mfa.tokenReq": "Introduceți un indicativ MFA",
   "mobile.about.appVersion": "Versiunea aplicației: {version} (Build {number})",
-  "mobile.about.copyright": "Drepturi de autor 2015-{currentYear} Mattermost, Inc. Toate drepturile rezervate",
+  "mobile.about.copyright": "Drepturi de autor 2020-{currentYear} Prossell, Inc. Toate drepturile rezervate",
   "mobile.about.database": "Bază de date: {type}",
   "mobile.about.licensed": "Licențiat în: {company}",
   "mobile.about.powered_by": "{site} este alimentat de Prossell",
